@@ -5,7 +5,7 @@ import aboutMainImg from "@/images/about-main.jpg"
 export default function About() {
 	return (
 		<section
-			id="apropos"
+			id="about"
 			aria-labelledby="about-heading"
 			className="overflow-hidden py-24 sm:py-32"
 		>

@@ -43,7 +43,7 @@ export default function Services() {
 						sizes="(min-width: 1024px) 33vw, 0vw"
 						className="object-cover opacity-20"
 					/>
-					<div className="absolute inset-0 bg-linear-to-l from-transparent via-background/70 to-background" />
+					<div className="absolute inset-0 bg-background/40" />
 				</div>
 			</div>
 

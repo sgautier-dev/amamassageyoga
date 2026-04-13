@@ -6,7 +6,7 @@ export default function Universe() {
 	return (
 		<section
 			aria-labelledby="universe-heading"
-			className="relative overflow-hidden py-24 sm:py-32"
+			className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8"
 		>
 			<div className="absolute inset-0 -z-10">
 				<Image
@@ -14,12 +14,11 @@ export default function Universe() {
 					alt=""
 					fill
 					sizes="100vw"
-					className="object-cover opacity-8"
+					className="object-cover opacity-25"
 				/>
-				<div className="absolute inset-0 bg-background/92" />
+				<div className="absolute inset-0 bg-background/40" />
 			</div>
-
-			<div className="relative mx-auto max-w-4xl px-6 text-center lg:px-8">
+			<div className="mx-auto max-w-3xl text-center">
 				<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 					Univers AMA
 				</p>

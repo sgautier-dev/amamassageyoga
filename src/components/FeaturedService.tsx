@@ -22,7 +22,7 @@ const testimonials = [
 export default function FeaturedService() {
 	return (
 		<section
-			id="soins"
+			id="featured"
 			aria-labelledby="featured-heading"
 			className="relative py-24 sm:py-32"
 		>

@@ -4,6 +4,7 @@ import FeaturedService from "@/components/FeaturedService"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Services from "@/components/Services"
+import Universe from "@/components/Universe"
 
 export default function HomePage() {
 	return (
@@ -14,6 +15,7 @@ export default function HomePage() {
 			<FeaturedService />
 			<Services/>
 			<About/>
+			<Universe/>
 		</main>
 	)
 }
