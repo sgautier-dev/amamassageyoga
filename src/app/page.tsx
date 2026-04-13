@@ -1,3 +1,4 @@
+import About from "@/components/About"
 import Experience from "@/components/Experience"
 import FeaturedService from "@/components/FeaturedService"
 import Header from "@/components/Header"
@@ -12,6 +13,7 @@ export default function HomePage() {
 			<Experience />
 			<FeaturedService />
 			<Services/>
+			<About/>
 		</main>
 	)
 }
