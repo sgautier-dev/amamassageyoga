@@ -2,6 +2,7 @@ import Experience from "@/components/Experience"
 import FeaturedService from "@/components/FeaturedService"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
+import Services from "@/components/Services"
 
 export default function HomePage() {
 	return (
@@ -10,6 +11,7 @@ export default function HomePage() {
 			<Hero />
 			<Experience />
 			<FeaturedService />
+			<Services/>
 		</main>
 	)
 }
