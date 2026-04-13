@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Dialog, DialogPanel } from "@headlessui/react"
@@ -14,12 +14,33 @@ const navigation = [
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+	const [isAtTop, setIsAtTop] = useState(true)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsAtTop(window.scrollY < 8)
+		}
+
+		handleScroll()
+
+		window.addEventListener("scroll", handleScroll)
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll)
+		}
+	}, [])
 
 	return (
-		<header className="relative z-50">
+		<header
+			className={`sticky top-0 z-20 transition-all duration-300 ${
+				isAtTop
+					? "bg-background"
+					: "bg-background/80 shadow-sm backdrop-blur-md"
+			}`}
+		>
 			<nav
 				aria-label="Global"
-				className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 px-6 py-4 lg:px-8"
+				className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 px-6 py-0 lg:px-8"
 			>
 				<div className="flex lg:flex-1">
 					<Link href="/" className="-m-1.5 p-1.5">
@@ -30,7 +51,7 @@ export default function Header() {
 							width={140}
 							height={48}
 							priority
-							className="h-10 w-auto"
+							className="h-20 sm:h-25 w-auto"
 						/>
 					</Link>
 				</div>
