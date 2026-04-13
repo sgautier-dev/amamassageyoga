@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+	/* AMA brand colors */
+	--color-ama-yellow: #ffd44d;
+	--color-ama-pink: #f18b8c;
+	--color-ama-green: #6abfa8;
+	--color-ama-blue: #648dc9;
+	--color-ama-purple: #82467c;
+
+	/* Semantic colors */
+	--color-background: #fffdf9;
+	--color-foreground: #2f2430;
+	--color-muted: #6b7280;
+	--color-border: rgba(130, 70, 124, 0.12);
+
+	/* Font */
+	--font-sans: var(--font-cabin);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--color-background);
+	color: var(--color-foreground);
+	font-family: var(--font-cabin), sans-serif;
+}
+
+/* Optional utility layer for a cleaner visual base */
+@layer base {
+	* {
+		border-color: var(--color-border);
+	}
+
+	::selection {
+		background: color-mix(in srgb, var(--color-ama-pink) 35%, white);
+		color: var(--color-foreground);
+	}
+
+	a,
+	button {
+		transition:
+			color 150ms ease,
+			background-color 150ms ease,
+			border-color 150ms ease,
+			opacity 150ms ease;
+	}
 }
