@@ -1,4 +1,5 @@
 import About from "@/components/About"
+import Contact from "@/components/Contact"
 import Experience from "@/components/Experience"
 import FeaturedService from "@/components/FeaturedService"
 import Header from "@/components/Header"
@@ -18,6 +19,7 @@ export default function HomePage() {
 			<About />
 			<Universe />
 			<Location />
+			<Contact />
 		</main>
 	)
 }
