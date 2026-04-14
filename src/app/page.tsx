@@ -2,6 +2,7 @@ import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Experience from "@/components/Experience"
 import FeaturedService from "@/components/FeaturedService"
+import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import Location from "@/components/Location"
@@ -20,6 +21,7 @@ export default function HomePage() {
 			<Universe />
 			<Location />
 			<Contact />
+			<Footer />
 		</main>
 	)
 }
