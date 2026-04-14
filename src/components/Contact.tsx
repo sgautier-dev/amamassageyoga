@@ -41,7 +41,7 @@ export default function Contact() {
 					<div className="mt-8">
 						<Link
 							href="tel:0610755048"
-							className="inline-flex items-center justify-center rounded-full bg-ama-purple px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+							className="inline-flex items-center justify-center rounded-full bg-ama-purple px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-ama-pink"
 						>
 							Appeler maintenant
 						</Link>

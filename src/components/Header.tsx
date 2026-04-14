@@ -58,23 +58,23 @@ export default function Header() {
 
 				<div className="hidden lg:flex lg:gap-x-10">
 					{navigation.map((item) => (
-						<a
+						<Link
 							key={item.name}
 							href={item.href}
 							className="text-sm font-semibold text-foreground transition hover:text-ama-purple"
 						>
 							{item.name}
-						</a>
+						</Link>
 					))}
 				</div>
 
 				<div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
-					<a
+					<Link
 						href="#contact"
-						className="inline-flex items-center justify-center rounded-full bg-ama-purple px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+						className="inline-flex items-center justify-center rounded-full bg-ama-purple px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
 					>
 						Prendre rendez-vous
-					</a>
+					</Link>
 				</div>
 
 				<div className="flex lg:hidden">
@@ -126,25 +126,24 @@ export default function Header() {
 					<div className="mt-8 flow-root">
 						<div className="space-y-2">
 							{navigation.map((item) => (
-								<a
+								<Link
 									key={item.name}
 									href={item.href}
 									onClick={() => setMobileMenuOpen(false)}
 									className="block rounded-2xl px-4 py-3 text-base font-semibold text-foreground transition hover:bg-ama-purple/5 hover:text-ama-purple"
 								>
 									{item.name}
-								</a>
+								</Link>
 							))}
 						</div>
 
 						<div className="mt-8">
-							<a
+							<Link
 								href="#contact"
-								onClick={() => setMobileMenuOpen(false)}
-								className="inline-flex w-full items-center justify-center rounded-full bg-ama-purple px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+								className="inline-flex items-center justify-center rounded-full bg-ama-purple px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
 							>
 								Prendre rendez-vous
-							</a>
+							</Link>
 						</div>
 					</div>
 				</DialogPanel>

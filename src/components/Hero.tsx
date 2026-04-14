@@ -30,7 +30,7 @@ export default function Hero() {
 						<div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
 							<Link
 								href="#contact"
-								className="inline-flex items-center justify-center rounded-full bg-ama-purple px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+								className="inline-flex items-center justify-center rounded-full bg-ama-purple px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
 							>
 								Prendre rendez-vous
 							</Link>
