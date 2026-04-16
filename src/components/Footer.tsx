@@ -93,6 +93,14 @@ export default function Footer() {
 						© {new Date().getFullYear()} AMA Massage et Yoga. Tous droits
 						réservés.
 					</p>
+					<a
+						href="https://www.sgautier.dev/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-xs leading-5 text-muted transition-colors hover:text-ama-pink"
+					>
+						<span translate="no">Designed by SG</span>
+					</a>
 				</div>
 			</div>
 		</footer>
