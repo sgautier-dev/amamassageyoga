@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const testimonials = [
 	{
 		quote: "Un pur moment de lâcher prise.",
@@ -18,9 +20,18 @@ export default function Experience() {
 		<section
 			id="experience"
 			aria-labelledby="experience-heading"
-			className="py-24 sm:py-32"
+			className="relative overflow-hidden py-24 sm:py-32"
 		>
-			<div className="mx-auto max-w-7xl px-6 lg:px-8">
+			<Image
+				src="/graphics/ama-star-pink.png"
+				alt=""
+				aria-hidden="true"
+				width={140}
+				height={140}
+				className="pointer-events-none absolute right-10 bottom-40 z-0 hidden w-28 select-none opacity-50 sm:block lg:right-10 lg:bottom-6 lg:w-32"
+			/>
+
+			<div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl text-center">
 					<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 						L’expérience AMA

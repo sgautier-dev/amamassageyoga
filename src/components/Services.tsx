@@ -8,22 +8,26 @@ const services = [
 		description:
 			"Des soins complets à l’huile chaude, profonds et enveloppants.",
 		accent: "bg-ama-pink",
+		glow: "bg-linear-to-br from-ama-yellow to-ama-pink",
 	},
 	{
 		name: "Accompagnement féminin",
 		description: "Un espace de douceur et de soutien.",
-		accent: "bg-ama-yellow",
+		accent: "bg-ama-green",
+		glow: "bg-linear-to-br from-ama-yellow to-ama-green",
 	},
 	{
 		name: "Soins ciblés",
 		description:
 			"Ventre, crâne, visage, dos, pieds, mains, drainant… Des approches spécifiques pour libérer les tensions, relancer la circulation et retrouver de la fluidité.",
-		accent: "bg-ama-green",
+		accent: "bg-ama-blue",
+		glow: "bg-linear-to-br from-ama-green to-ama-blue",
 	},
 	{
 		name: "Yoga doux – Yin yoga",
 		description: "Une pratique lente et introspective, sur demande.",
 		accent: "bg-ama-purple",
+		glow: "bg-linear-to-br from-ama-blue to-ama-purple",
 	},
 ]
 
@@ -71,17 +75,26 @@ export default function Services() {
 						{services.map((service) => (
 							<article
 								key={service.name}
-								className="rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition hover:border-ama-purple/20 hover:shadow-md"
+								className="relative isolate overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition hover:border-ama-purple/20 hover:shadow-md"
 							>
-								<div className={`h-1.5 w-14 rounded-full ${service.accent}`} />
+								<div
+									aria-hidden="true"
+									className={`pointer-events-none absolute -top-12 -right-12 h-36 w-36 rounded-full blur-3xl opacity-60 ${service.glow}`}
+								/>
 
-								<h3 className="mt-6 text-xl font-semibold text-foreground">
-									{service.name}
-								</h3>
+								<div className="relative z-10">
+									<div
+										className={`h-1.5 w-14 rounded-full ${service.accent}`}
+									/>
 
-								<p className="mt-4 text-base leading-7 text-muted">
-									{service.description}
-								</p>
+									<h3 className="mt-6 text-xl font-semibold text-foreground">
+										{service.name}
+									</h3>
+
+									<p className="mt-4 text-base leading-7 text-muted">
+										{service.description}
+									</p>
+								</div>
 							</article>
 						))}
 					</div>

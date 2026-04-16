@@ -6,8 +6,17 @@ import heroImg from "@/images/hero.jpg"
 export default function Hero() {
 	return (
 		<section className="relative overflow-hidden">
+			<Image
+				src="/graphics/ama-star-yellow.png"
+				alt=""
+				aria-hidden="true"
+				width={360}
+				height={360}
+				className="pointer-events-none absolute w-32 top-6 right-10 z-0 hidden opacity-50 select-none sm:block lg:top-10 md:right-[10%] lg:right-[40%] xl:right-[50%] lg:w-40"
+			/>
+
 			<div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-				<div className="px-6 pt-14 pb-16 sm:pb-20 lg:col-span-7 lg:px-0 lg:pt-24 lg:pb-24 xl:col-span-6">
+				<div className="relative z-10 px-6 pt-14 pb-16 sm:pb-20 lg:col-span-7 lg:px-0 lg:pt-24 lg:pb-24 xl:col-span-6">
 					<div className="mx-auto max-w-lg lg:mx-0">
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							Massage & yoga à Parentis-en-Born

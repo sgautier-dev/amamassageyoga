@@ -18,6 +18,25 @@ export default function Universe() {
 				/>
 				<div className="absolute inset-0 bg-background/40" />
 			</div>
+
+			<Image
+				src="/graphics/ama-circle-green.png"
+				alt=""
+				aria-hidden="true"
+				width={320}
+				height={320}
+				className="pointer-events-none absolute -top-20 -left-24 -z-10 hidden w-64 select-none opacity-40 sm:block lg:w-80"
+			/>
+
+			<Image
+				src="/graphics/ama-star-pink.png"
+				alt=""
+				aria-hidden="true"
+				width={180}
+				height={180}
+				className="pointer-events-none absolute right-6 bottom-10 -z-10 hidden w-28 select-none opacity-50 sm:block lg:right-8 lg:bottom-8 lg:w-36"
+			/>
+
 			<div className="mx-auto max-w-3xl text-center">
 				<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 					Univers AMA

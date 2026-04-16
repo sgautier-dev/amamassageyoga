@@ -48,13 +48,24 @@ export default function About() {
 					</div>
 
 					<div className="lg:pl-4">
-						<div className="relative mx-auto max-w-xl overflow-hidden rounded-3xl shadow-sm lg:mx-0">
-							<div className="aspect-4/5">
-								<Image
-									src={aboutMainImg}
-									alt="Marie dans son univers de soin"
-									className="h-full w-full object-cover"
-								/>
+						<div className="relative mx-auto max-w-xl lg:mx-0">
+							<Image
+								src="/graphics/ama-circle-blue.png"
+								alt=""
+								aria-hidden="true"
+								width={260}
+								height={260}
+								className="pointer-events-none absolute -top-10 -right-10 z-0 hidden w-40 select-none opacity-50 sm:block lg:w-52"
+							/>
+
+							<div className="relative z-10 overflow-hidden rounded-3xl shadow-sm">
+								<div className="aspect-4/5">
+									<Image
+										src={aboutMainImg}
+										alt="Marie dans son univers de soin"
+										className="h-full w-full object-cover"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>

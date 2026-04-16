@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Contact() {
@@ -5,9 +6,18 @@ export default function Contact() {
 		<section
 			id="contact"
 			aria-labelledby="contact-heading"
-			className="isolate px-6 py-24 sm:py-32 lg:px-8"
+			className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8"
 		>
-			<div className="mx-auto max-w-2xl text-center">
+			<Image
+				src="/graphics/ama-star-yellow.png"
+				alt=""
+				aria-hidden="true"
+				width={140}
+				height={140}
+				className="pointer-events-none absolute top-10 right-10 z-0 hidden w-24 select-none opacity-50 sm:block lg:top-12 lg:right-10 lg:w-28"
+			/>
+
+			<div className="relative z-10 mx-auto max-w-2xl text-center">
 				<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 					Contact
 				</p>

@@ -56,8 +56,17 @@ const social = [
 
 export default function Footer() {
 	return (
-		<footer className="border-t border-ama-purple/10">
-			<div className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+		<footer className="relative overflow-hidden border-t border-ama-purple/10">
+			<Image
+				src="/graphics/ama-star-purple.png"
+				alt=""
+				aria-hidden="true"
+				width={140}
+				height={140}
+				className="pointer-events-none absolute top-6 left-6 z-0 hidden w-16 select-none opacity-50 sm:block lg:top-10 lg:left-10 lg:w-20"
+			/>
+
+			<div className="relative z-10 mx-auto max-w-7xl px-6 py-10 lg:px-8">
 				<div className="flex flex-col items-center gap-4 text-center">
 					<Link href="/" className="inline-flex">
 						<span className="sr-only">AMA Massage et Yoga</span>
@@ -66,7 +75,7 @@ export default function Footer() {
 							alt="AMA Massage et Yoga"
 							width={140}
 							height={56}
-							className="h-16 sm:h-20 w-auto"
+							className="h-16 w-auto sm:h-20"
 						/>
 					</Link>
 
@@ -93,6 +102,7 @@ export default function Footer() {
 						© {new Date().getFullYear()} AMA Massage et Yoga. Tous droits
 						réservés.
 					</p>
+
 					<a
 						href="https://www.sgautier.dev/"
 						target="_blank"
