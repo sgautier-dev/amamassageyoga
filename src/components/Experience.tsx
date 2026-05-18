@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Reveal from "@/components/reveal"
 
 const testimonials = [
 	{
@@ -32,7 +33,7 @@ export default function Experience() {
 			/>
 
 			<div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-				<div className="mx-auto max-w-2xl text-center">
+				<Reveal className="mx-auto max-w-2xl text-center">
 					<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 						L’expérience AMA
 					</p>
@@ -54,11 +55,11 @@ export default function Experience() {
 						s’approfondit, l’esprit s’ouvre au silence intérieur… Pour se
 						laisser traverser, se déposer…
 					</p>
-				</div>
+				</Reveal>
 
 				<div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-10 sm:mt-20 lg:grid-cols-3">
 					{testimonials.map((testimonial) => (
-						<figure
+						<Reveal
 							key={testimonial.author + testimonial.quote}
 							className="border-l-2 border-ama-pink/50 pl-6"
 						>
@@ -71,7 +72,7 @@ export default function Experience() {
 									{testimonial.author}
 								</span>
 							</figcaption>
-						</figure>
+						</Reveal>
 					))}
 				</div>
 			</div>

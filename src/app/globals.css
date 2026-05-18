@@ -52,6 +52,7 @@ body {
 /* ANIMATIONS */
 
 @media (prefers-reduced-motion: no-preference) {
+	/* Hero animations */
 	@keyframes hero-fade-up {
 		0% {
 			opacity: 0;
@@ -106,9 +107,37 @@ body {
 	.float-soft {
 		animation: float-soft 5s ease-in-out infinite;
 	}
+
+	/* Scroll reveal animations */
+	.reveal-on-scroll {
+		opacity: 0;
+		transform: translateY(40px);
+		transition:
+			opacity 1000ms cubic-bezier(0.22, 1, 0.36, 1),
+			transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+		will-change: opacity, transform;
+	}
+
+	.reveal-on-scroll.is-visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.reveal-delay-sm {
+		transition-delay: 120ms;
+	}
+
+	.reveal-delay-md {
+		transition-delay: 220ms;
+	}
+
+	.reveal-delay-lg {
+		transition-delay: 320ms;
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
+	/* Hero animations */
 	.hero-reveal,
 	.hero-image-reveal {
 		opacity: 1;
@@ -118,5 +147,12 @@ body {
 
 	.float-soft {
 		animation: none;
+	}
+
+	/* Scroll reveal animations */
+	.reveal-on-scroll {
+		opacity: 1;
+		transform: none;
+		transition: none;
 	}
 }
