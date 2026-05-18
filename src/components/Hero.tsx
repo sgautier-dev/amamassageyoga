@@ -12,11 +12,12 @@ export default function Hero() {
 				aria-hidden="true"
 				width={360}
 				height={360}
-				className="pointer-events-none absolute w-32 top-6 right-10 z-0 hidden opacity-50 select-none sm:block lg:top-10 md:right-[10%] lg:right-[40%] xl:right-[50%] lg:w-40"
+				loading="eager"
+				className="pointer-events-none absolute top-6 right-10 z-0 hidden w-32 select-none opacity-50 sm:block md:right-[10%] lg:top-10 lg:right-[40%] lg:w-40 xl:right-[50%] float-soft"
 			/>
 
 			<div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-				<div className="relative z-10 px-6 pt-14 pb-16 sm:pb-20 lg:col-span-7 lg:px-0 lg:pt-24 lg:pb-24 xl:col-span-6">
+				<div className="relative z-10 px-6 pt-14 pb-16 sm:pb-20 lg:col-span-7 lg:px-0 lg:pt-24 lg:pb-24 xl:col-span-6 hero-reveal">
 					<div className="mx-auto max-w-lg lg:mx-0">
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							Massage & yoga à Parentis-en-Born
@@ -54,7 +55,7 @@ export default function Hero() {
 					</div>
 				</div>
 
-				<div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+				<div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 hero-image-reveal hero-reveal-delay-1">
 					<div className="relative h-full min-h-88 w-full lg:min-h-160">
 						<Image
 							src={heroImg}
