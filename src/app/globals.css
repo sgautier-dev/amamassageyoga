@@ -108,7 +108,7 @@ body {
 		animation: float-soft 5s ease-in-out infinite;
 	}
 	.float-soft-slow {
-		animation: float-soft 9s ease-in-out infinite;
+		animation: float-soft 7s ease-in-out infinite;
 	}
 
 	/* Scroll reveal animations */
