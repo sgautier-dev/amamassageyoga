@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import Reveal from "@/components/reveal"
 import featuredImg from "@/images/featured.jpg"
 
 const benefits = [
@@ -27,8 +28,8 @@ export default function FeaturedService() {
 			className="relative py-24 sm:py-32"
 		>
 			<div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
-				<div className="px-6 lg:w-1/2 lg:px-8 xl:px-0">
-					<div className="relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
+				<Reveal className="px-6 lg:w-1/2 lg:px-8 xl:px-0">
+					<div className="relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl shadow-sm sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
 						<Image
 							src={featuredImg}
 							alt="Soin de champissage AMA Massage et Yoga"
@@ -36,10 +37,13 @@ export default function FeaturedService() {
 							priority={false}
 						/>
 					</div>
-				</div>
+				</Reveal>
 
 				<div className="px-6 lg:contents">
-					<div className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2">
+					<Reveal
+						delay="sm"
+						className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2"
+					>
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							Massage assis
 						</p>
@@ -109,7 +113,7 @@ export default function FeaturedService() {
 								))}
 							</div>
 						</div>
-					</div>
+					</Reveal>
 				</div>
 			</div>
 		</section>
