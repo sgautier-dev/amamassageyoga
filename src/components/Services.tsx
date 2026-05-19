@@ -77,10 +77,10 @@ export default function Services() {
 					<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 						{services.map((service, index) => (
 							<Reveal key={service.name} delay={cardDelays[index]}>
-								<article className="relative isolate h-full overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition hover:-translate-y-0.5 hover:border-ama-purple/20 hover:shadow-md">
+								<article className="group relative isolate h-full overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-ama-purple/20 hover:shadow-md">
 									<div
 										aria-hidden="true"
-										className={`pointer-events-none absolute -top-12 -right-12 h-36 w-36 rounded-full opacity-60 blur-3xl ${service.glow}`}
+										className={`pointer-events-none absolute -top-12 -right-12 h-36 w-36 rounded-full opacity-60 blur-3xl transition-opacity duration-500 group-hover:opacity-80 ${service.glow}`}
 									/>
 
 									<div className="relative z-10">

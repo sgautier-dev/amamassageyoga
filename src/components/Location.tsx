@@ -19,11 +19,11 @@ export default function Location() {
 		>
 			<div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
 				<Reveal className="lg:flex lg:w-1/2 lg:shrink-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-					<div className="relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl shadow-sm sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
+					<div className="group relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl shadow-sm sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
 						<Image
 							src={locationImg}
 							alt="Cabinet de massage AMA à Parentis-en-Born"
-							className="h-full w-full object-cover object-center"
+							className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
 						/>
 					</div>
 				</Reveal>

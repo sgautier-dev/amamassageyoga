@@ -59,12 +59,12 @@ export default function About() {
 								className="pointer-events-none absolute -top-10 -right-10 z-0 hidden w-40 select-none opacity-50 sm:block lg:w-52"
 							/>
 
-							<div className="relative z-10 overflow-hidden rounded-3xl shadow-sm">
+							<div className="group relative z-10 overflow-hidden rounded-3xl shadow-sm">
 								<div className="aspect-4/5">
 									<Image
 										src={aboutMainImg}
 										alt="Marie dans son univers de soin"
-										className="h-full w-full object-cover"
+										className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
 									/>
 								</div>
 							</div>

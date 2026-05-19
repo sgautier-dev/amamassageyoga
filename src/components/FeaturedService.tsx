@@ -29,11 +29,11 @@ export default function FeaturedService() {
 		>
 			<div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
 				<Reveal className="px-6 lg:w-1/2 lg:px-8 xl:px-0">
-					<div className="relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl shadow-sm sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
+					<div className="group relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl shadow-sm sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
 						<Image
 							src={featuredImg}
 							alt="Soin de champissage AMA Massage et Yoga"
-							className="h-full w-full object-cover object-center"
+							className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
 							priority={false}
 						/>
 					</div>
