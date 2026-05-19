@@ -37,7 +37,7 @@ const cardDelays = ["none", "sm", "md", "lg"] as const
 export default function Services() {
 	return (
 		<section
-			id="services"
+			id="soins"
 			aria-labelledby="services-heading"
 			className="relative overflow-hidden py-24 sm:py-32"
 		>

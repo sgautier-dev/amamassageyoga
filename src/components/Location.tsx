@@ -13,7 +13,7 @@ const locations = [
 export default function Location() {
 	return (
 		<section
-			id="location"
+			id="lieu"
 			aria-labelledby="location-heading"
 			className="relative py-24 sm:py-32"
 		>
