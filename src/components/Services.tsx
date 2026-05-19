@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import Reveal from "@/components/reveal"
 import bgOilImg from "@/images/huilecoco.jpg"
 
 const services = [
@@ -31,6 +32,8 @@ const services = [
 	},
 ]
 
+const cardDelays = ["none", "sm", "md", "lg"] as const
+
 export default function Services() {
 	return (
 		<section
@@ -52,7 +55,7 @@ export default function Services() {
 			</div>
 
 			<div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-				<div className="mx-auto max-w-2xl text-center">
+				<Reveal className="mx-auto max-w-2xl text-center">
 					<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 						Les soins
 					</p>
@@ -68,34 +71,33 @@ export default function Services() {
 						Des approches ajustées à vos besoins, pour relâcher les tensions,
 						retrouver de la fluidité et revenir à l’essentiel.
 					</p>
-				</div>
+				</Reveal>
 
 				<div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">
 					<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-						{services.map((service) => (
-							<article
-								key={service.name}
-								className="relative isolate overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition hover:border-ama-purple/20 hover:shadow-md"
-							>
-								<div
-									aria-hidden="true"
-									className={`pointer-events-none absolute -top-12 -right-12 h-36 w-36 rounded-full blur-3xl opacity-60 ${service.glow}`}
-								/>
-
-								<div className="relative z-10">
+						{services.map((service, index) => (
+							<Reveal key={service.name} delay={cardDelays[index]}>
+								<article className="relative isolate h-full overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition hover:-translate-y-0.5 hover:border-ama-purple/20 hover:shadow-md">
 									<div
-										className={`h-1.5 w-14 rounded-full ${service.accent}`}
+										aria-hidden="true"
+										className={`pointer-events-none absolute -top-12 -right-12 h-36 w-36 rounded-full opacity-60 blur-3xl ${service.glow}`}
 									/>
 
-									<h3 className="mt-6 text-xl font-semibold text-foreground">
-										{service.name}
-									</h3>
+									<div className="relative z-10">
+										<div
+											className={`h-1.5 w-14 rounded-full ${service.accent}`}
+										/>
 
-									<p className="mt-4 text-base leading-7 text-muted">
-										{service.description}
-									</p>
-								</div>
-							</article>
+										<h3 className="mt-6 text-xl font-semibold text-foreground">
+											{service.name}
+										</h3>
+
+										<p className="mt-4 text-base leading-7 text-muted">
+											{service.description}
+										</p>
+									</div>
+								</article>
+							</Reveal>
 						))}
 					</div>
 				</div>
