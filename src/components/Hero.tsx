@@ -2,18 +2,18 @@ import Image from "next/image"
 import Link from "next/link"
 
 import heroImg from "@/images/hero.jpg"
+import PointerFloatImage from "@/components/pointer-float-image"
 
 export default function Hero() {
 	return (
 		<section className="relative overflow-hidden">
-			<Image
+			<PointerFloatImage
 				src="/graphics/ama-star-yellow.png"
-				alt=""
-				aria-hidden="true"
 				width={360}
 				height={360}
-				loading="eager"
-				className="pointer-events-none absolute top-6 right-10 z-0 hidden w-32 select-none opacity-50 sm:block md:right-[10%] lg:top-10 lg:right-[40%] lg:w-40 xl:right-[50%] float-soft"
+				strength={12}
+				wrapperClassName="absolute top-6 right-10 z-0 hidden sm:block md:right-[10%] lg:top-10 lg:right-[40%] xl:right-[50%]"
+				imageClassName="w-32 select-none opacity-50 lg:w-40 float-soft"
 			/>
 
 			<div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">

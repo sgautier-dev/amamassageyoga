@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import PointerFloatImage from "@/components/pointer-float-image"
 
 const social = [
 	{
@@ -57,13 +58,13 @@ const social = [
 export default function Footer() {
 	return (
 		<footer className="relative overflow-hidden border-t border-ama-purple/10">
-			<Image
+			<PointerFloatImage
 				src="/graphics/ama-star-purple.png"
-				alt=""
-				aria-hidden="true"
 				width={140}
 				height={140}
-				className="pointer-events-none absolute top-6 left-6 z-0 hidden w-16 select-none opacity-50 sm:block lg:top-10 lg:left-10 lg:w-20 float-soft-slow"
+				strength={6}
+				wrapperClassName="absolute top-6 left-6 z-0 hidden sm:block lg:top-10 lg:left-10"
+				imageClassName="w-16 select-none opacity-50 lg:w-20 float-soft-slow"
 			/>
 
 			<div className="relative z-10 mx-auto max-w-7xl px-6 py-10 lg:px-8">
