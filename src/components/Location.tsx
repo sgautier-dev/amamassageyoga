@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import Reveal from "@/components/reveal"
 import locationImg from "@/images/location.jpg"
 
 const locations = [
@@ -17,18 +18,21 @@ export default function Location() {
 			className="relative py-24 sm:py-32"
 		>
 			<div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
-				<div className="lg:flex lg:w-1/2 lg:shrink-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-					<div className="relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
+				<Reveal className="lg:flex lg:w-1/2 lg:shrink-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
+					<div className="relative mx-auto h-80 max-w-xl overflow-hidden rounded-3xl shadow-sm sm:h-96 lg:mx-0 lg:mt-24 lg:h-130 lg:max-w-none">
 						<Image
 							src={locationImg}
 							alt="Cabinet de massage AMA à Parentis-en-Born"
 							className="h-full w-full object-cover object-center"
 						/>
 					</div>
-				</div>
+				</Reveal>
 
 				<div className="px-6 lg:contents">
-					<div className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2">
+					<Reveal
+						delay="sm"
+						className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2"
+					>
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							Où me trouver
 						</p>
@@ -64,7 +68,7 @@ export default function Location() {
 								Les séances se font sur rendez-vous, selon les disponibilités.
 							</p>
 						</div>
-					</div>
+					</Reveal>
 				</div>
 			</div>
 		</section>

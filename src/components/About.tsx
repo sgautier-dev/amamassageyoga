@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import Reveal from "@/components/reveal"
 import aboutMainImg from "@/images/about-main.jpg"
 
 export default function About() {
@@ -11,7 +12,7 @@ export default function About() {
 		>
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:items-start lg:gap-x-16">
-					<div className="max-w-2xl">
+					<Reveal className="max-w-2xl">
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							À propos
 						</p>
@@ -45,9 +46,9 @@ export default function About() {
 								retrouver son rythme et sa fluidité.
 							</p>
 						</div>
-					</div>
+					</Reveal>
 
-					<div className="lg:pl-4">
+					<Reveal delay="sm" className="lg:pl-4">
 						<div className="relative mx-auto max-w-xl lg:mx-0">
 							<Image
 								src="/graphics/ama-circle-blue.png"
@@ -68,7 +69,7 @@ export default function About() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</Reveal>
 				</div>
 			</div>
 		</section>

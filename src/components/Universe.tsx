@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import Reveal from "@/components/reveal"
 import universeImg from "@/images/universe.jpg"
 
 export default function Universe() {
@@ -37,7 +38,7 @@ export default function Universe() {
 				className="pointer-events-none absolute right-6 bottom-10 -z-10 hidden w-28 select-none opacity-50 sm:block lg:right-8 lg:bottom-8 lg:w-36"
 			/>
 
-			<div className="mx-auto max-w-3xl text-center">
+			<Reveal className="mx-auto max-w-3xl text-center">
 				<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 					Univers AMA
 				</p>
@@ -62,7 +63,7 @@ export default function Universe() {
 
 					<p>Un espace pour soulager, s’alléger… et revenir à l’essentiel.</p>
 				</div>
-			</div>
+			</Reveal>
 		</section>
 	)
 }
