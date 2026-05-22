@@ -1,7 +1,8 @@
 import Image from "next/image"
+import Link from "next/link"
 
 import Reveal from "@/components/reveal"
-import aboutMainImg from "@/images/about-main.jpg"
+import aboutTeaserImg from "@/images/about-teaser.jpg"
 
 export default function About() {
 	return (
@@ -30,22 +31,24 @@ export default function About() {
 
 						<div className="mt-8 space-y-6 text-base leading-8 text-muted sm:text-lg">
 							<p>
-								Formée en Thaïlande, à La Réunion et en Inde, j’ai développé une
-								pratique fondée sur la présence, la précision du geste et la
-								qualité de l’écoute.
+								Mon parcours entre mouvement, soin et traditions corporelles
+								nourrit une pratique fondée sur la présence, la précision du
+								geste et l’écoute du corps.
 							</p>
 
 							<p>
-								Orientée vers l’approche ayurvédique, je continue d’étudier sur
-								le long terme, dans une recherche de justesse, de profondeur et
-								de simplicité.
-							</p>
-
-							<p>
-								Chaque soin est un espace où l’on peut se déposer en confiance,
-								retrouver son rythme et sa fluidité.
+								Chaque séance est pensée comme un espace de confiance, pour
+								laisser le corps relâcher, respirer et retrouver son propre
+								rythme.
 							</p>
 						</div>
+
+						<Link
+							href="/a-propos"
+							className="mt-8 inline-flex items-center justify-center rounded-full bg-ama-purple px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
+						>
+							Découvrir mon approche
+						</Link>
 					</Reveal>
 
 					<Reveal delay="sm" className="lg:pl-4">
@@ -62,7 +65,7 @@ export default function About() {
 							<div className="group relative z-10 overflow-hidden rounded-3xl shadow-sm">
 								<div className="aspect-4/5">
 									<Image
-										src={aboutMainImg}
+										src={aboutTeaserImg}
 										alt="Marie dans son univers de soin"
 										className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
 									/>

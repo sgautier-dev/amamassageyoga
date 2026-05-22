@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 import Reveal from "@/components/reveal"
 import featuredImg from "@/images/featured.jpg"
@@ -112,6 +113,13 @@ export default function FeaturedService() {
 									</figure>
 								))}
 							</div>
+
+							<Link
+								href="/soins-et-tarifs#champissage"
+								className="mt-10 inline-flex items-center justify-center rounded-full bg-ama-purple px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
+							>
+								Détails et tarifs
+							</Link>
 						</div>
 					</Reveal>
 				</div>
