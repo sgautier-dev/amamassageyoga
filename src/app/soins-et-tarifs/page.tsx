@@ -172,7 +172,7 @@ export default function SoinsEtTarifsPage() {
 					aria-hidden="true"
 					width={220}
 					height={220}
-					className="pointer-events-none absolute top-10 right-8 -z-10 hidden w-32 select-none opacity-50 sm:block lg:right-[14%] lg:w-40"
+					className="pointer-events-none absolute top-10 right-8 -z-10 hidden w-32 select-none opacity-50 sm:block lg:right-[14%] lg:w-40 float-soft-slow"
 				/>
 
 				<Image

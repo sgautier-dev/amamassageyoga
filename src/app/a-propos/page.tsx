@@ -20,7 +20,7 @@ export default function AProposPage() {
 					aria-hidden="true"
 					width={260}
 					height={260}
-					className="pointer-events-none absolute -right-20 top-16 -z-10 hidden w-56 select-none opacity-40 sm:block lg:right-[10%]"
+					className="pointer-events-none absolute -right-20 top-16 -z-10 hidden w-56 select-none opacity-40 sm:block lg:right-[10%] float-soft-slow"
 				/>
 
 				<Reveal className="mx-auto max-w-3xl text-center">
