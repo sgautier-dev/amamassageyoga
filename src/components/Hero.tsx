@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import heroImg from "@/images/hero.jpg"
+import heroImg from "@/images/hero.png"
 import PointerFloatImage from "@/components/pointer-float-image"
 
 export default function Hero() {
