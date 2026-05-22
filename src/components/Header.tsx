@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { Dialog, DialogPanel } from "@headlessui/react"
@@ -15,6 +16,17 @@ const navigation = [
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 	const [isAtTop, setIsAtTop] = useState(true)
+	const pathname = usePathname()
+
+	function handleLogoClick(event: React.MouseEvent<HTMLAnchorElement>) {
+		if (pathname === "/") {
+			event.preventDefault()
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			})
+		}
+	}
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -43,7 +55,7 @@ export default function Header() {
 				className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 px-6 py-0 lg:px-8"
 			>
 				<div className="flex lg:flex-1">
-					<Link href="/" className="-m-1.5 p-1.5">
+					<Link href="/" onClick={handleLogoClick}  className="-m-1.5 p-1.5">
 						<span className="sr-only">AMA Massage et Yoga</span>
 						<Image
 							src="/logo-ama.svg"

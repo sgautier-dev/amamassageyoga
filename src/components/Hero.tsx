@@ -6,7 +6,7 @@ import PointerFloatImage from "@/components/pointer-float-image"
 
 export default function Hero() {
 	return (
-		<section className="relative overflow-hidden">
+		<section id="accueil" className="relative overflow-hidden">
 			<PointerFloatImage
 				src="/graphics/ama-star-yellow.png"
 				width={360}
