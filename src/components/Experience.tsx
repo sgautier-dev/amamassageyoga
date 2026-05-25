@@ -1,20 +1,6 @@
 import Image from "next/image"
-import Reveal from "@/components/reveal"
 
-const testimonials = [
-	{
-		quote: "Un pur moment de lâcher prise.",
-		author: "Camille",
-	},
-	{
-		quote: "Je ne pensais pas que cela me ferait autant de bien.",
-		author: "Julie",
-	},
-	{
-		quote: "Un des meilleurs massages de ma vie.",
-		author: "Sarah",
-	},
-]
+import Reveal from "@/components/reveal"
 
 export default function Experience() {
 	return (
@@ -29,7 +15,7 @@ export default function Experience() {
 				aria-hidden="true"
 				width={140}
 				height={140}
-				className="pointer-events-none absolute right-10 bottom-40 z-0 hidden w-28 select-none opacity-50 sm:block lg:right-10 lg:bottom-6 lg:w-32"
+				className="pointer-events-none absolute right-10 bottom-16 z-0 hidden w-28 select-none opacity-50 sm:block lg:right-16 lg:bottom-20 lg:w-32"
 			/>
 
 			<div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
@@ -45,36 +31,22 @@ export default function Experience() {
 						Une parenthèse pour changer de rythme
 					</h2>
 
-					<p className="mt-6 text-lg leading-8 text-muted sm:text-xl">
-						Dans l’agitation du quotidien, s’offrir une pause devient essentiel.
-						Ralentir, respirer, et laisser le corps retrouver son propre flow.
-					</p>
+					<div className="mt-6 space-y-6 text-lg leading-8 text-muted sm:text-xl">
+						<p>
+							Dans l’agitation du quotidien, s’offrir une pause devient
+							essentiel.
+						</p>
 
-					<p className="mt-6 text-base leading-8 text-muted sm:text-lg">
-						Sous mes mains, les tensions se dénouent, la respiration
-						s’approfondit, l’esprit s’ouvre au silence intérieur… Pour se
-						laisser traverser, se déposer…
-					</p>
+						<p>
+							Ralentir, respirer, et laisser le corps retrouver sa fluidité.
+						</p>
+
+						<p>
+							Sous mes mains, les tensions se dénouent, le mental s’apaise… pour
+							laisser place à plus de calme et de présence.
+						</p>
+					</div>
 				</Reveal>
-
-				<div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-10 sm:mt-20 lg:grid-cols-3">
-					{testimonials.map((testimonial) => (
-						<Reveal
-							key={testimonial.author + testimonial.quote}
-							className="border-l-2 border-ama-pink/50 pl-6"
-						>
-							<blockquote className="text-lg leading-8 text-foreground italic">
-								<p>“{testimonial.quote}”</p>
-							</blockquote>
-
-							<figcaption className="mt-6 text-sm leading-6">
-								<span className="font-semibold text-foreground">
-									{testimonial.author}
-								</span>
-							</figcaption>
-						</Reveal>
-					))}
-				</div>
 			</div>
 		</section>
 	)
