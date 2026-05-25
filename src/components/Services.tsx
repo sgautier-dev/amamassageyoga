@@ -7,30 +7,29 @@ import bgOilImg from "@/images/huilecoco.jpg"
 const services = [
 	{
 		name: "Massages ayurvédiques du corps",
-		description:
-			"Des soins complets à l’huile chaude, profonds et enveloppants.",
-		accent: "bg-ama-pink",
+		description: "Le soin complet, profond et rééquilibrant, à l’huile chaude.",
+		accent: "bg-ama-yellow",
 		glow: "bg-linear-to-br from-ama-yellow to-ama-pink",
 		href: "/soins-et-tarifs#massages-ayurvediques",
 	},
 	{
 		name: "Accompagnement féminin",
 		description: "Un espace de douceur et de soutien.",
-		accent: "bg-ama-green",
-		glow: "bg-linear-to-br from-ama-yellow to-ama-green",
+		accent: "bg-ama-pink",
+		glow: "bg-linear-to-br from-ama-yellow to-ama-pink",
 		href: "/soins-et-tarifs#accompagnement-feminin",
 	},
 	{
 		name: "Soins ciblés",
 		description:
-			"Ventre, crâne, visage, dos, pieds, mains, drainant… Des approches spécifiques pour libérer les tensions, relancer la circulation et retrouver de la fluidité.",
-		accent: "bg-ama-blue",
+			"Relâcher les tensions localisées, soutenir la circulation et retrouver de la fluidité.",
+		accent: "bg-ama-green",
 		glow: "bg-linear-to-br from-ama-green to-ama-blue",
 		href: "/soins-et-tarifs#soins-cibles",
 	},
 	{
-		name: "Yoga doux – Yin yoga",
-		description: "Une pratique lente et introspective, sur demande.",
+		name: "Yoga doux — Yin yoga",
+		description: "Ralentir, respirer et se reconnecter.",
 		accent: "bg-ama-purple",
 		glow: "bg-linear-to-br from-ama-blue to-ama-purple",
 		href: "/soins-et-tarifs#yoga-doux",

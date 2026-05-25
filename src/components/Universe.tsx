@@ -52,16 +52,14 @@ export default function Universe() {
 
 				<div className="mt-8 space-y-6 text-lg leading-8 text-muted sm:text-xl">
 					<p>
-						Un lieu où le temps ralentit… où l’on peut, simplement, se laisser
-						porter, se laisser traverser.
+						Un lieu où le temps ralentit… où l’on peut simplement se laisser
+						porter, se déposer.
 					</p>
 
 					<p>
-						Le toucher guide vers le silence, la réconciliation avec le corps,
-						pour retrouver l’apaisement en soi.
+						Le toucher guide vers le relâchement, la respiration s’approfondit,
+						le corps retrouve son rythme.
 					</p>
-
-					<p>Un espace pour soulager, s’alléger… et revenir à l’essentiel.</p>
 				</div>
 			</Reveal>
 		</section>
