@@ -3,19 +3,17 @@ import Link from "next/link"
 import Reveal from "@/components/reveal"
 
 type BookingCtaProps = {
-	title?: string
 	eyebrow?: string
+	title?: string
 	description?: string
-	phoneHref?: string
 	buttonLabel?: string
 	className?: string
 }
 
 export default function BookingCta({
-	title = "S’offrir un temps pour revenir à soi",
 	eyebrow = "Prendre rendez-vous",
+	title = "S’offrir un temps pour revenir à soi",
 	description,
-	phoneHref = "tel:0610755048",
 	buttonLabel = "Appeler maintenant",
 	className = "",
 }: BookingCtaProps) {
@@ -31,14 +29,14 @@ export default function BookingCta({
 				</h2>
 
 				{description ? (
-					<p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/80">
+					<p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
 						{description}
 					</p>
 				) : null}
 
 				<div className="mt-8">
 					<Link
-						href={phoneHref}
+						href="tel:0610755048"
 						className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-ama-purple shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-yellow hover:shadow-md"
 					>
 						{buttonLabel}
