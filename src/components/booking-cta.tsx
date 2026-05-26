@@ -34,6 +34,10 @@ export default function BookingCta({
 					</p>
 				) : null}
 
+				<p className="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+					06 10 75 50 48
+				</p>
+
 				<div className="mt-8">
 					<Link
 						href="tel:0610755048"

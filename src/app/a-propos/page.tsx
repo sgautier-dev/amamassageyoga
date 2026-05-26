@@ -215,9 +215,8 @@ export default function AProposPage() {
 			</section>
 
 			<BookingCta
-				title="Envie d’un temps pour vous ?"
-				description="Le plus simple est de me contacter directement pour choisir le soin le plus adapté à votre besoin du moment."
-				buttonLabel="Appeler maintenant"
+				title="Du corps au cœur, une invitation à revenir à soi."
+				description="Contactez-moi par téléphone, SMS ou WhatsApp."
 			/>
 		</main>
 	)
