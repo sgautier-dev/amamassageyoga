@@ -2,6 +2,7 @@ import Image from "next/image"
 
 import Reveal from "@/components/reveal"
 import BookingCta from "@/components/booking-cta"
+import OpenDetailsFromHash from "@/components/openDetailsFromHash"
 
 export const metadata = {
 	title: "Soins & tarifs",
@@ -253,6 +254,7 @@ const cares: Care[] = [
 export default function SoinsEtTarifsPage() {
 	return (
 		<main className="relative overflow-hidden">
+			<OpenDetailsFromHash />
 			<section className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
 				<Image
 					src="/graphics/ama-star-yellow.png"

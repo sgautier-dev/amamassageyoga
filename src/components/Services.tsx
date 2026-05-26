@@ -9,30 +9,26 @@ const services = [
 		name: "Massages ayurvédiques du corps",
 		description: "Le soin complet, profond et rééquilibrant, à l’huile chaude.",
 		accent: "bg-ama-yellow",
-		glow: "bg-linear-to-br from-ama-yellow to-ama-pink",
-		href: "/soins-et-tarifs#massages-ayurvediques",
+		hash: "massages-ayurvediques",
 	},
 	{
 		name: "Accompagnement féminin",
 		description: "Un espace de douceur et de soutien.",
 		accent: "bg-ama-pink",
-		glow: "bg-linear-to-br from-ama-yellow to-ama-pink",
-		href: "/soins-et-tarifs#accompagnement-feminin",
+		hash: "accompagnement-feminin",
 	},
 	{
 		name: "Soins ciblés",
 		description:
 			"Relâcher les tensions localisées, soutenir la circulation et retrouver de la fluidité.",
 		accent: "bg-ama-green",
-		glow: "bg-linear-to-br from-ama-green to-ama-blue",
-		href: "/soins-et-tarifs#soins-cibles",
+		hash: "soins-cibles",
 	},
 	{
 		name: "Yoga doux — Yin yoga",
 		description: "Ralentir, respirer et se reconnecter.",
 		accent: "bg-ama-purple",
-		glow: "bg-linear-to-br from-ama-blue to-ama-purple",
-		href: "/soins-et-tarifs#yoga-doux",
+		hash: "yoga-doux",
 	},
 ]
 
@@ -82,32 +78,28 @@ export default function Services() {
 						{services.map((service, index) => (
 							<Reveal key={service.name} delay={cardDelays[index]}>
 								<Link
-									href={service.href}
+									href={{
+										pathname: "/soins-et-tarifs",
+										hash: service.hash,
+									}}
 									className="group block h-full rounded-3xl focus:outline-none focus-visible:ring-2 focus-visible:ring-ama-purple/40 focus-visible:ring-offset-4"
 								>
-									<article className="relative isolate h-full overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-ama-purple/20 group-hover:shadow-md">
+									<article className="relative h-full rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-ama-purple/20 group-hover:bg-white/95 group-hover:shadow-md">
 										<div
-											aria-hidden="true"
-											className={`pointer-events-none absolute -top-12 -right-12 h-36 w-36 rounded-full opacity-60 blur-3xl transition-opacity duration-500 group-hover:opacity-80 ${service.glow}`}
+											className={`h-1.5 w-14 rounded-full ${service.accent}`}
 										/>
 
-										<div className="relative z-10">
-											<div
-												className={`h-1.5 w-14 rounded-full ${service.accent}`}
-											/>
+										<h3 className="mt-6 text-xl font-semibold text-foreground">
+											{service.name}
+										</h3>
 
-											<h3 className="mt-6 text-xl font-semibold text-foreground">
-												{service.name}
-											</h3>
+										<p className="mt-4 text-base leading-7 text-muted">
+											{service.description}
+										</p>
 
-											<p className="mt-4 text-base leading-7 text-muted">
-												{service.description}
-											</p>
-
-											<p className="mt-6 text-sm font-semibold text-ama-purple transition-colors group-hover:text-ama-pink">
-												Voir les tarifs →
-											</p>
-										</div>
+										<p className="mt-6 text-sm font-semibold text-ama-purple transition-colors group-hover:text-ama-pink">
+											Découvrir le soin →
+										</p>
 									</article>
 								</Link>
 							</Reveal>
