@@ -7,14 +7,16 @@ type BookingCtaProps = {
 	title?: string
 	description?: string
 	buttonLabel?: string
+	headingId?: string
 	className?: string
 }
 
 export default function BookingCta({
 	eyebrow = "Prendre rendez-vous",
 	title = "S’offrir un temps pour revenir à soi",
-	description,
+	description = "Contactez-moi par téléphone, SMS ou WhatsApp.",
 	buttonLabel = "Appeler maintenant",
+	headingId,
 	className = "",
 }: BookingCtaProps) {
 	return (
@@ -24,7 +26,10 @@ export default function BookingCta({
 					{eyebrow}
 				</p>
 
-				<h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+				<h2
+					id={headingId}
+					className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl"
+				>
 					{title}
 				</h2>
 
@@ -35,12 +40,12 @@ export default function BookingCta({
 				) : null}
 
 				<p className="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-					06 10 75 50 48
+					+33 6 10 75 50 48
 				</p>
 
 				<div className="mt-8">
 					<Link
-						href="tel:0610755048"
+						href="tel:+33610755048"
 						className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-ama-purple shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-yellow hover:shadow-md"
 					>
 						{buttonLabel}

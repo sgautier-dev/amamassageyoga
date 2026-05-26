@@ -216,7 +216,6 @@ export default function AProposPage() {
 
 			<BookingCta
 				title="Du corps au cœur, une invitation à revenir à soi."
-				description="Contactez-moi par téléphone, SMS ou WhatsApp."
 			/>
 		</main>
 	)

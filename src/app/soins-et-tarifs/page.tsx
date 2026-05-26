@@ -566,10 +566,7 @@ export default function SoinsEtTarifsPage() {
 				</Reveal>
 			</section>
 
-			<BookingCta
-				title="S’offrir un temps pour revenir à soi"
-				description="Contactez-moi par téléphone, SMS ou WhatsApp."
-			/>
+			<BookingCta />
 		</main>
 	)
 }
