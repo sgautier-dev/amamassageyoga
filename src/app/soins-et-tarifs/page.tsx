@@ -647,11 +647,17 @@ export default function SoinsEtTarifsPage() {
 						Un temps d’accueil et d’intégration est toujours prévu.
 					</h2>
 
-					<p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-muted sm:text-lg">
-						Les durées indiquées correspondent au temps de soin. Un temps
-						d’accueil et d’intégration est toujours prévu pour accompagner
-						l’expérience.
-					</p>
+					<div className="mx-auto mt-6 max-w-2xl space-y-3 text-base leading-7 text-muted sm:text-lg">
+						<p>
+							Les durées indiquées correspondent au temps de soin. Un temps
+							d’accueil et d’intégration est toujours prévu pour accompagner
+							l’expérience.
+						</p>
+
+						<p className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-ama-purple shadow-sm ring-1 ring-ama-purple/10">
+							🎁 Bons cadeaux disponibles sur demande.
+						</p>
+					</div>
 				</Reveal>
 			</section>
 
