@@ -274,7 +274,7 @@ export default function SoinsEtTarifsPage() {
 					className="pointer-events-none absolute -left-24 bottom-10 -z-10 hidden w-56 select-none opacity-35 lg:block"
 				/>
 
-				<Reveal className="mx-auto max-w-3xl text-center">
+				<Reveal className="mx-auto max-w-4xl text-center">
 					<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 						Soins & tarifs
 					</p>
@@ -284,14 +284,21 @@ export default function SoinsEtTarifsPage() {
 					</h1>
 
 					<p className="mt-6 text-lg leading-8 text-muted sm:text-xl">
-						Chaque séance s’adapte à votre besoin du moment, dans une approche à
-						l’écoute du corps.
-					</p>
-
-					<p className="mt-4 text-base leading-7 text-muted">
 						Le massage ayurvédique du corps constitue la base des soins
 						proposés, autour duquel s’articulent les différentes approches.
 					</p>
+
+					<div className="mx-auto mt-8 max-w-2xl rounded-3xl border border-ama-purple/10 bg-white/80 p-6 text-left shadow-sm">
+						<p className="text-sm font-medium uppercase tracking-[0.14em] text-ama-purple">
+							Produits utilisés
+						</p>
+
+						<p className="mt-4 text-base leading-7 text-muted">
+							Dans une approche respectueuse du corps, des produits biologiques
+							soigneusement sélectionnés accompagnent les soins : hydrolats,
+							huiles et macérât de plantes, sans huiles essentielles.
+						</p>
+					</div>
 				</Reveal>
 			</section>
 
