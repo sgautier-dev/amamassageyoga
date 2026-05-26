@@ -52,6 +52,9 @@ export default function BookingCta({
 					>
 						{buttonLabel}
 					</Link>
+					<p className="mt-5 text-sm leading-6 text-white/75">
+						🌍 Langues parlées : anglais · espagnol · portugais
+					</p>
 				</div>
 			</Reveal>
 		</section>

@@ -319,7 +319,7 @@ export default function SoinsEtTarifsPage() {
 							<Reveal key={care.id} delay={index % 2 === 0 ? "none" : "sm"}>
 								<details
 									id={care.id}
-									className="group scroll-mt-28 rounded-3xl border border-ama-purple/10 bg-white/85 p-6 shadow-sm open:bg-white sm:p-8"
+									className="group scroll-mt-36 rounded-3xl border border-ama-purple/10 bg-white/85 p-6 shadow-sm open:bg-white sm:p-8"
 								>
 									<summary className="flex cursor-pointer list-none items-start justify-between gap-5">
 										<div className="min-w-0 flex-1 md:grid md:grid-cols-[minmax(0,1fr)_auto] md:items-start md:gap-6">
