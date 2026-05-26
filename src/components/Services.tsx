@@ -6,26 +6,26 @@ import bgOilImg from "@/images/huilecoco.jpg"
 
 const services = [
 	{
-		name: "Massages ayurvédiques du corps",
+		name: "Massage ayurvédique du corps",
 		description: "Le soin complet, profond et rééquilibrant, à l’huile chaude.",
 		accent: "bg-ama-yellow",
 		hash: "massages-ayurvediques",
 	},
 	{
-		name: "Accompagnement féminin",
-		description: "Un espace de douceur et de soutien.",
+		name: "Soins spécifiques",
+		description:
+			"Champissage, crâne, visage, ventre, pieds… des approches ciblées pour relâcher les tensions.",
 		accent: "bg-ama-pink",
+		hash: "champissage",
+	},
+	{
+		name: "Accompagnement féminin",
+		description: "Un espace de douceur et de soutien autour du massage prénatal.",
+		accent: "bg-ama-blue",
 		hash: "accompagnement-feminin",
 	},
 	{
-		name: "Soins ciblés",
-		description:
-			"Relâcher les tensions localisées, soutenir la circulation et retrouver de la fluidité.",
-		accent: "bg-ama-green",
-		hash: "soins-cibles",
-	},
-	{
-		name: "Yoga doux — Yin yoga",
+		name: "Yoga doux & Yin yoga",
 		description: "Ralentir, respirer et se reconnecter.",
 		accent: "bg-ama-purple",
 		hash: "yoga-doux",
@@ -98,7 +98,7 @@ export default function Services() {
 										</p>
 
 										<p className="mt-6 text-sm font-semibold text-ama-purple transition-colors group-hover:text-ama-pink">
-											Découvrir le soin →
+											Découvrir →
 										</p>
 									</article>
 								</Link>

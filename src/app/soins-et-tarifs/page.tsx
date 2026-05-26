@@ -1,8 +1,14 @@
-import Image from "next/image"
+import Image, { type StaticImageData } from "next/image"
 
 import Reveal from "@/components/reveal"
 import BookingCta from "@/components/booking-cta"
 import OpenDetailsFromHash from "@/components/openDetailsFromHash"
+import massageAyurvediqueImg from "@/images/soins/massage-ayurvedique.png"
+import massagePiedsBolKansuImg from "@/images/soins/massage-pieds-bol-kansu.png"
+import soinsVisageMarmaliftImg from "@/images/soins/soins-visage-marmalift.png"
+import champissageImg from "@/images/soins/champissage.jpg"
+import massagePrenatalImg from "@/images/soins/massage-prenatal.jpg"
+import yinYogaImg from "@/images/soins/yin-yoga.jpg"
 
 export const metadata = {
 	title: "Soins & tarifs",
@@ -28,6 +34,8 @@ type Care = {
 	location?: string
 	note?: string
 	accent: string
+	thumbnail?: StaticImageData
+	thumbnailAlt?: string
 }
 
 type CareGroup = {
@@ -43,9 +51,11 @@ const careGroups: CareGroup[] = [
 				id: "massages-ayurvediques",
 				title: "Massage ayurvédique du corps",
 				accent: "bg-ama-yellow",
+				thumbnail: massageAyurvediqueImg,
+				thumbnailAlt: "Massage ayurvédique du corps",
 				prices: [
 					{ duration: "60 min", price: "70 €" },
-					{ duration: "90 min", price: "100 €", featured: true },
+					{ duration: "90 min", price: "100 €" },
 					{ duration: "120 min", price: "130 €" },
 				],
 				description: [
@@ -66,7 +76,7 @@ const careGroups: CareGroup[] = [
 				title: "Massage drainant",
 				accent: "bg-ama-yellow",
 				prices: [
-					{ duration: "75 min", price: "80 €" },
+					{ duration: "75 min", price: "85 €" },
 					{ duration: "90 min", price: "100 €" },
 				],
 				description: [
@@ -86,6 +96,8 @@ const careGroups: CareGroup[] = [
 				id: "accompagnement-feminin",
 				title: "Massage prénatal",
 				accent: "bg-ama-pink",
+				thumbnail: massagePrenatalImg,
+				thumbnailAlt: "Massage prénatal",
 				prices: [
 					{ duration: "75 min", price: "90 €" },
 					{ duration: "90 min", price: "110 €" },
@@ -115,6 +127,8 @@ const careGroups: CareGroup[] = [
 				title: "Massage assis — Champissage",
 				subtitle: "Dos · épaules · nuque · crâne · visage",
 				accent: "bg-ama-pink",
+				thumbnail: champissageImg,
+				thumbnailAlt: "Massage assis Champissage",
 				prices: [
 					{ duration: "30 min", price: "40 €" },
 					{ duration: "45 min", price: "50 €" },
@@ -156,6 +170,8 @@ const careGroups: CareGroup[] = [
 				title: "Soins du visage",
 				subtitle: "Marmalift — massage ayurvédique rajeunissant",
 				accent: "bg-ama-green",
+				thumbnail: soinsVisageMarmaliftImg,
+				thumbnailAlt: "Soin du visage Marmalift",
 				prices: [{ duration: "60 min", price: "70 €" }],
 				description: [
 					"Un soin liftant naturel qui associe techniques manuelles et stimulation des points marmas (points d’acupressure en Ayurveda).",
@@ -193,6 +209,8 @@ const careGroups: CareGroup[] = [
 				id: "massage-pieds-bol-kansu",
 				title: "Massage des pieds au bol Kansu",
 				accent: "bg-ama-blue",
+				thumbnail: massagePiedsBolKansuImg,
+				thumbnailAlt: "Massage des pieds au bol Kansu",
 				prices: [{ duration: "45 min", price: "Sur demande" }],
 				description: [
 					"Un soin profondément apaisant qui agit à la fois sur les pieds, les jambes et l’équilibre global du corps.",
@@ -236,6 +254,8 @@ const careGroups: CareGroup[] = [
 				id: "yoga-doux",
 				title: "Yin yoga & yoga doux",
 				accent: "bg-ama-purple",
+				thumbnail: yinYogaImg,
+				thumbnailAlt: "Yin yoga et yoga doux",
 				prices: [
 					{
 						duration: "Séances individuelles ou collectives",
@@ -372,19 +392,35 @@ export default function SoinsEtTarifsPage() {
 												<summary className="flex cursor-pointer list-none items-start justify-between gap-5">
 													<div className="min-w-0 flex-1 md:grid md:grid-cols-[minmax(0,1fr)_auto] md:items-start md:gap-6">
 														<div className="min-w-0">
-															<div
-																className={`h-1.5 w-14 rounded-full ${care.accent}`}
-															/>
+															<div className="flex items-start gap-4">
+																{care.thumbnail ? (
+																	<div className="shrink-0 overflow-hidden rounded-full bg-background ring-1 ring-ama-purple/10">
+																		<Image
+																			src={care.thumbnail}
+																			alt={care.thumbnailAlt ?? care.title}
+																			width={56}
+																			height={56}
+																			className="size-14 object-cover"
+																		/>
+																	</div>
+																) : null}
 
-															<h3 className="mt-5 text-2xl font-semibold tracking-tight text-foreground">
-																{care.title}
-															</h3>
+																<div className="min-w-0">
+																	<div
+																		className={`h-1.5 w-14 rounded-full ${care.accent}`}
+																	/>
 
-															{care.subtitle ? (
-																<p className="mt-2 text-sm font-medium tracking-wide text-ama-purple">
-																	{care.subtitle}
-																</p>
-															) : null}
+																	<h3 className="mt-5 text-2xl font-semibold tracking-tight text-foreground">
+																		{care.title}
+																	</h3>
+
+																	{care.subtitle ? (
+																		<p className="mt-2 text-sm font-medium tracking-wide text-ama-purple">
+																			{care.subtitle}
+																		</p>
+																	) : null}
+																</div>
+															</div>
 														</div>
 
 														{care.prices?.length ? (
