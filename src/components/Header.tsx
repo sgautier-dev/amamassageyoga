@@ -21,10 +21,26 @@ export default function Header() {
 	function handleLogoClick(event: React.MouseEvent<HTMLAnchorElement>) {
 		if (pathname === "/") {
 			event.preventDefault()
+
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth",
 			})
+
+			window.history.replaceState(null, "", "/")
+		}
+	}
+
+	function handleContactClick(event: React.MouseEvent<HTMLAnchorElement>) {
+		if (pathname === "/") {
+			event.preventDefault()
+
+			document.getElementById("contact")?.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			})
+
+			window.history.replaceState(null, "", "/#contact")
 		}
 	}
 
@@ -55,7 +71,7 @@ export default function Header() {
 				className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 px-6 py-0 lg:px-8"
 			>
 				<div className="flex lg:flex-1">
-					<Link href="/" onClick={handleLogoClick}  className="-m-1.5 p-1.5">
+					<Link href="/" onClick={handleLogoClick} className="-m-1.5 p-1.5">
 						<span className="sr-only">AMA Massage et Yoga</span>
 						<Image
 							src="/logo-ama.svg"
@@ -63,7 +79,7 @@ export default function Header() {
 							width={140}
 							height={48}
 							priority
-							className="h-20 sm:h-25 w-auto"
+							className="h-20 w-auto sm:h-25"
 						/>
 					</Link>
 				</div>
@@ -73,6 +89,9 @@ export default function Header() {
 						<Link
 							key={item.name}
 							href={item.href}
+							onClick={
+								item.href === "/#contact" ? handleContactClick : undefined
+							}
 							className="text-sm font-semibold text-foreground transition hover:text-ama-purple"
 						>
 							{item.name}
@@ -83,6 +102,7 @@ export default function Header() {
 				<div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
 					<Link
 						href="/#contact"
+						onClick={handleContactClick}
 						className="inline-flex items-center justify-center rounded-full bg-ama-purple px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
 					>
 						Prendre rendez-vous
@@ -113,7 +133,10 @@ export default function Header() {
 						<Link
 							href="/"
 							className="-m-1.5 p-1.5"
-							onClick={() => setMobileMenuOpen(false)}
+							onClick={(event) => {
+								setMobileMenuOpen(false)
+								handleLogoClick(event)
+							}}
 						>
 							<span className="sr-only">AMA Massage et Yoga</span>
 							<Image
@@ -121,7 +144,7 @@ export default function Header() {
 								alt="AMA Massage et Yoga"
 								width={140}
 								height={48}
-								className="h-20 sm:h-25 w-auto"
+								className="h-20 w-auto sm:h-25"
 							/>
 						</Link>
 
@@ -141,7 +164,13 @@ export default function Header() {
 								<Link
 									key={item.name}
 									href={item.href}
-									onClick={() => setMobileMenuOpen(false)}
+									onClick={(event) => {
+										setMobileMenuOpen(false)
+
+										if (item.href === "/#contact") {
+											handleContactClick(event)
+										}
+									}}
 									className="block rounded-2xl px-4 py-3 text-base font-semibold text-foreground transition hover:bg-ama-purple/5 hover:text-ama-purple"
 								>
 									{item.name}
@@ -152,6 +181,10 @@ export default function Header() {
 						<div className="mt-8">
 							<Link
 								href="/#contact"
+								onClick={(event) => {
+									setMobileMenuOpen(false)
+									handleContactClick(event)
+								}}
 								className="inline-flex items-center justify-center rounded-full bg-ama-purple px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
 							>
 								Prendre rendez-vous
