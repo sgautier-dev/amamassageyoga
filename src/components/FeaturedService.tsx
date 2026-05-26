@@ -5,20 +5,9 @@ import Reveal from "@/components/reveal"
 import featuredImg from "@/images/featured.jpg"
 
 const benefits = [
-	"Relâcher les tensions accumulées",
+	"Relâcher les tensions rapidement",
 	"Apaiser le système nerveux",
 	"Retrouver énergie et clarté",
-]
-
-const testimonials = [
-	{
-		quote: "Les effets durent dans le temps.",
-		author: "Camille",
-	},
-	{
-		quote: "Mes douleurs se sont atténuées.",
-		author: "Julie",
-	},
 ]
 
 export default function FeaturedService() {
@@ -43,7 +32,7 @@ export default function FeaturedService() {
 				<div className="px-6 lg:contents">
 					<Reveal
 						delay="sm"
-						className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2"
+						className="mx-auto max-w-2xl pt-12 pb-0 sm:pt-16 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2"
 					>
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							Massage assis
@@ -61,19 +50,16 @@ export default function FeaturedService() {
 						</p>
 
 						<p className="mt-6 text-lg leading-8 text-muted">
-							Issu de la tradition indienne, le Champissage est un massage
-							précis, enveloppant et profondément relaxant.
+							Un massage assis issu de la tradition ayurvédique, pensé pour
+							relâcher rapidement les tensions du dos, des épaules, de la nuque
+							et du crâne.
 						</p>
 
 						<div className="mt-8 max-w-xl text-base leading-8 text-muted lg:max-w-none">
 							<p>
-								Pratiqué habillé, sans huile, il s’intègre facilement dans tous
-								les environnements.
-							</p>
-
-							<p className="mt-6">
-								Ajusté selon votre disponibilité, de 15 à 45 minutes, il offre
-								une pause accessible et régénérante au cœur de la journée.
+								Pratiqué habillé et sans huile, il s’adapte facilement au
+								cabinet, à l’entreprise, aux événements ou à une pause dans la
+								journée.
 							</p>
 
 							<ul role="list" className="mt-8 space-y-4">
@@ -90,35 +76,11 @@ export default function FeaturedService() {
 								))}
 							</ul>
 
-							<p className="mt-8">
-								Idéal en entreprise, lors d’événements ou pour s’offrir une
-								pause dans la journée.
-							</p>
-
-							<div className="mt-10 space-y-6">
-								{testimonials.map((testimonial) => (
-									<figure
-										key={testimonial.author + testimonial.quote}
-										className="border-l-2 border-ama-green/40 pl-6"
-									>
-										<blockquote className="text-lg leading-8 text-foreground italic">
-											<p>“{testimonial.quote}”</p>
-										</blockquote>
-
-										<figcaption className="mt-4 text-sm leading-6">
-											<span className="font-semibold text-ama-purple">
-												{testimonial.author}
-											</span>
-										</figcaption>
-									</figure>
-								))}
-							</div>
-
 							<Link
 								href="/soins-et-tarifs#champissage"
 								className="mt-10 inline-flex items-center justify-center rounded-full bg-ama-purple px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-ama-pink hover:shadow-md"
 							>
-								Détails et tarifs
+								Découvrir ce soin
 							</Link>
 						</div>
 					</Reveal>

@@ -20,7 +20,9 @@ export default function BookingCta({
 	className = "",
 }: BookingCtaProps) {
 	return (
-		<section className={`px-6 pb-24 sm:pb-32 lg:px-8 ${className}`}>
+		<section
+			className={`px-6 pt-8 pb-24 sm:pt-12 sm:pb-32 lg:px-8 ${className}`}
+		>
 			<Reveal className="mx-auto max-w-4xl rounded-3xl bg-ama-purple px-6 py-12 text-center text-white shadow-sm sm:px-10">
 				<p className="text-sm font-medium uppercase tracking-[0.18em] text-white/75">
 					{eyebrow}

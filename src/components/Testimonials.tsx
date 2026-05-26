@@ -4,14 +4,17 @@ const testimonials = [
 	{
 		quote: "Un pur moment de lâcher prise.",
 		author: "Camille",
+		accent: "bg-ama-yellow",
 	},
 	{
 		quote: "Je ne pensais pas que cela me ferait autant de bien.",
 		author: "Julie",
+		accent: "bg-ama-pink",
 	},
 	{
 		quote: "Un des meilleurs massages de ma vie.",
 		author: "Sarah",
+		accent: "bg-ama-green",
 	},
 ]
 
@@ -22,7 +25,7 @@ export default function Testimonials() {
 		<section
 			id="avis-clients"
 			aria-labelledby="testimonials-heading"
-			className="relative overflow-hidden py-24 sm:py-32"
+			className="relative overflow-hidden py-20 sm:py-28"
 		>
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<Reveal className="mx-auto max-w-2xl text-center">
@@ -38,22 +41,27 @@ export default function Testimonials() {
 					</h2>
 				</Reveal>
 
-				<div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-10 sm:mt-20 lg:grid-cols-3">
+				<div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-3">
 					{testimonials.map((testimonial, index) => (
 						<Reveal
 							key={testimonial.author + testimonial.quote}
 							delay={cardDelays[index]}
-							className="border-l-2 border-ama-pink/50 pl-6"
 						>
-							<blockquote className="text-lg leading-8 text-foreground italic">
-								<p>“{testimonial.quote}”</p>
-							</blockquote>
+							<figure className="h-full rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm">
+								<div
+									className={`h-1.5 w-14 rounded-full ${testimonial.accent}`}
+								/>
 
-							<figcaption className="mt-6 text-sm leading-6">
-								<span className="font-semibold text-foreground">
-									{testimonial.author}
-								</span>
-							</figcaption>
+								<blockquote className="mt-6 text-lg leading-8 text-foreground italic">
+									<p>“{testimonial.quote}”</p>
+								</blockquote>
+
+								<figcaption className="mt-6 text-sm leading-6">
+									<span className="font-semibold text-foreground">
+										{testimonial.author}
+									</span>
+								</figcaption>
+							</figure>
 						</Reveal>
 					))}
 				</div>

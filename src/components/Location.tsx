@@ -31,7 +31,7 @@ export default function Location() {
 				<div className="px-6 lg:contents">
 					<Reveal
 						delay="sm"
-						className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2"
+						className="mx-auto max-w-2xl pt-12 pb-0 sm:pt-16 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-24 xl:w-1/2"
 					>
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
 							Où me trouver

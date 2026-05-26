@@ -6,24 +6,15 @@ export default function Universe() {
 	return (
 		<section
 			aria-labelledby="universe-heading"
-			className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8"
+			className="relative isolate overflow-hidden px-6 py-20 sm:py-28 lg:px-8"
 		>
-			<Image
-				src="/graphics/ama-circle-green.png"
-				alt=""
-				aria-hidden="true"
-				width={320}
-				height={320}
-				className="pointer-events-none absolute -top-20 -left-24 -z-10 hidden w-64 select-none opacity-35 sm:block lg:w-80"
-			/>
-
 			<Image
 				src="/graphics/ama-star-pink.png"
 				alt=""
 				aria-hidden="true"
 				width={180}
 				height={180}
-				className="pointer-events-none absolute right-6 bottom-10 -z-10 hidden w-28 select-none opacity-45 sm:block lg:right-8 lg:bottom-8 lg:w-36"
+				className="pointer-events-none absolute right-6 bottom-8 -z-10 hidden w-24 select-none opacity-40 sm:block lg:right-10 lg:bottom-10 lg:w-32"
 			/>
 
 			<Reveal className="mx-auto max-w-3xl text-center">

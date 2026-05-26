@@ -72,8 +72,8 @@ export default function Services() {
 					</h2>
 
 					<p className="mt-6 text-lg leading-8 text-muted sm:text-xl">
-						Des approches ajustées à vos besoins, pour relâcher les tensions,
-						retrouver de la fluidité et revenir à l’essentiel.
+						Des approches adaptées à vos besoins, pour relâcher les tensions et
+						retrouver de la fluidité.
 					</p>
 				</Reveal>
 
