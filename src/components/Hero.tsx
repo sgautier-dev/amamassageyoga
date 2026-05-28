@@ -34,10 +34,10 @@ export default function Hero() {
 							Un espace pour ralentir, respirer… et se retrouver.
 						</p>
 
-						<p className="mt-4 text-base leading-7 text-muted">
+						<p className="mt-6 text-lg leading-8 text-muted sm:text-xl">
 							Des soins inspirés des traditions ayurvédique et thaïlandaise,
-							pour relâcher les tensions, apaiser le système nerveux et revenir
-							à l’essentiel.
+							pour apaiser le système nerveux, alléger le corps et libérer la
+							respiration.
 						</p>
 
 						<div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">

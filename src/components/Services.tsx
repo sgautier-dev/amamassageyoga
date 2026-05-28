@@ -20,7 +20,8 @@ const services = [
 	},
 	{
 		name: "Accompagnement féminin",
-		description: "Un espace de douceur et de soutien autour du massage prénatal.",
+		description:
+			"Un espace de douceur et de soutien autour du massage prénatal.",
 		accent: "bg-ama-blue",
 		hash: "accompagnement-feminin",
 	},
@@ -67,10 +68,17 @@ export default function Services() {
 						Des soins ancrés dans les traditions ayurvédique et thaïlandaise
 					</h2>
 
-					<p className="mt-6 text-lg leading-8 text-muted sm:text-xl">
-						Des approches adaptées à vos besoins, pour relâcher les tensions et
-						retrouver de la fluidité.
-					</p>
+					<div className="mt-6 space-y-4 text-lg leading-8 text-muted sm:text-xl">
+						<p>
+							Des approches adaptées à vos besoins, pour dénouer les tensions,
+							apaiser le mental et retrouver de la fluidité.
+						</p>
+
+						<p>
+							La pratique du yoga vient compléter les soins, en invitant à
+							ralentir, respirer et habiter pleinement son corps.
+						</p>
+					</div>
 				</Reveal>
 
 				<div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">

@@ -36,8 +36,8 @@ export default function Universe() {
 					</p>
 
 					<p>
-						Le toucher guide vers le relâchement, la respiration s’approfondit,
-						le corps retrouve son rythme.
+						Le toucher invite à la détente, la respiration s’approfondit et le
+						corps retrouve peu à peu son rythme.
 					</p>
 				</div>
 			</Reveal>
