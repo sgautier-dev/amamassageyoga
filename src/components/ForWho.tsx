@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import Reveal from "@/components/reveal"
+import marieforWhoImg from "@/images/marie-forwho.jpg"
 
 export default function ForWho() {
 	return (
@@ -9,30 +10,42 @@ export default function ForWho() {
 			aria-labelledby="for-who-heading"
 			className="relative isolate overflow-hidden px-6 py-20 sm:py-28 lg:px-8"
 		>
-			<Image
-				src="/graphics/ama-circle-green.png"
-				alt=""
-				aria-hidden="true"
-				width={320}
-				height={320}
-				className="pointer-events-none absolute top-8 left-6 -z-10 hidden w-36 select-none opacity-20 sm:block lg:top-10 lg:left-[18%] lg:w-44"
-			/>
+			<Reveal className="mx-auto max-w-5xl rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm sm:p-10 lg:p-12">
+				<div className="grid items-center gap-8 md:grid-cols-[auto_1fr] md:gap-10">
+					<div className="mx-auto shrink-0 md:mx-0">
+						<div className="overflow-hidden rounded-full bg-background ring-1 ring-ama-purple/10">
+							<Image
+								src={marieforWhoImg}
+								alt="Marie, praticienne AMA Massage et Yoga"
+								width={160}
+								height={160}
+								className="size-32 object-cover sm:size-40"
+							/>
+						</div>
+					</div>
 
-			<Reveal className="mx-auto max-w-3xl text-center">
-				<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
-					Pour qui
-				</p>
+					<div className="text-center md:text-left">
+						<h2
+							id="for-who-heading"
+							className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
+						>
+							Pour celles et ceux qui sentent le besoin de ralentir, de se
+							régénérer…
+						</h2>
 
-				<h2
-					id="for-who-heading"
-					className="mt-4 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl"
-				>
-					Pour celles et ceux qui ressentent le besoin de ralentir
-				</h2>
+						<div className="mt-6 space-y-4 text-base leading-8 text-muted sm:text-lg">
+							<p>
+								J’accueille ces moments où les tensions s’installent, où le
+								mental s’agite, où le corps fatigue.
+							</p>
 
-				<p className="mt-6 text-lg leading-8 text-muted sm:text-xl">
-					De relâcher les tensions et de se reconnecter à leur corps.
-				</p>
+							<p>
+								Grâce au toucher, les sensations de calme et de présence se
+								révèlent.
+							</p>
+						</div>
+					</div>
+				</div>
 			</Reveal>
 		</section>
 	)
