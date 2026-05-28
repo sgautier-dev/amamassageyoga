@@ -19,6 +19,15 @@ export default function Hero() {
 				imageClassName="w-32 select-none opacity-50 lg:w-40 float-soft"
 			/>
 
+			<Image
+				src="/graphics/ama-star-yellow.png"
+				alt=""
+				aria-hidden="true"
+				width={180}
+				height={180}
+				className="pointer-events-none absolute top-8 right-5 z-0 w-20 select-none opacity-35 sm:hidden"
+			/>
+
 			<div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
 				<div className="relative z-10 px-6 pt-14 pb-16 sm:pb-20 lg:col-span-7 lg:px-0 lg:pt-24 lg:pb-24 xl:col-span-6 hero-reveal">
 					<div className="mx-auto max-w-lg lg:mx-0">

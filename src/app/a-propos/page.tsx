@@ -34,7 +34,7 @@ export default function AProposPage() {
 					aria-hidden="true"
 					width={260}
 					height={260}
-					className="pointer-events-none absolute -right-20 top-16 -z-10 hidden w-56 select-none opacity-40 sm:block lg:right-[10%] float-soft-slow"
+					className="pointer-events-none absolute -right-14 top-20 -z-10 w-36 select-none opacity-35 sm:-right-20 sm:top-16 sm:w-56 sm:opacity-40 lg:right-[10%] float-soft-slow"
 				/>
 
 				<Reveal className="mx-auto max-w-3xl text-center">
@@ -96,15 +96,6 @@ export default function AProposPage() {
 
 						<Reveal delay="sm" className="lg:pl-4">
 							<div className="relative mx-auto max-w-xl lg:mx-0">
-								<Image
-									src="/graphics/ama-star-pink.png"
-									alt=""
-									aria-hidden="true"
-									width={160}
-									height={160}
-									className="pointer-events-none absolute -right-8 -top-8 z-0 hidden w-24 select-none opacity-50 sm:block lg:w-28"
-								/>
-
 								<div className="group relative z-10 overflow-hidden rounded-3xl shadow-sm">
 									<div className="aspect-4/5">
 										<Image
@@ -123,7 +114,16 @@ export default function AProposPage() {
 
 			<section className="px-6 pb-24 sm:pb-32 lg:px-8">
 				<div className="mx-auto max-w-5xl">
-					<Reveal className="rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm sm:p-10 lg:p-12">
+					<Reveal className="relative isolate overflow-hidden rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm sm:p-10 lg:p-12">
+						<Image
+							src="/graphics/ama-star-pink.png"
+							alt=""
+							aria-hidden="true"
+							width={180}
+							height={180}
+							className="pointer-events-none absolute right-4 top-4 -z-10 w-16 select-none opacity-20 sm:right-6 sm:top-6 sm:w-20 sm:opacity-25 lg:-left-3 lg:right-auto lg:top-auto lg:-bottom-3 lg:w-40 lg:opacity-30"
+						/>
+
 						<div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
 							<div>
 								<div className="h-1.5 w-14 rounded-full bg-ama-pink" />
@@ -202,9 +202,8 @@ export default function AProposPage() {
 							aria-hidden="true"
 							width={220}
 							height={220}
-							className="pointer-events-none absolute -right-16 -bottom-16 -z-10 hidden w-48 select-none opacity-35 sm:block"
+							className="pointer-events-none absolute -right-12 -bottom-12 -z-10 w-32 select-none opacity-30 sm:-right-16 sm:-bottom-16 sm:w-48 sm:opacity-35"
 						/>
-
 						<div className="max-w-3xl">
 							<div className="h-1.5 w-14 rounded-full bg-ama-blue" />
 

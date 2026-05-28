@@ -67,6 +67,15 @@ export default function Footer() {
 				imageClassName="w-16 select-none opacity-50 lg:w-20 float-soft-slow"
 			/>
 
+			<Image
+				src="/graphics/ama-star-purple.png"
+				alt=""
+				aria-hidden="true"
+				width={120}
+				height={120}
+				className="pointer-events-none absolute top-5 left-5 z-0 w-12 select-none opacity-25 sm:hidden"
+			/>
+
 			<div className="relative z-10 mx-auto max-w-7xl px-6 py-10 lg:px-8">
 				<div className="flex flex-col items-center gap-4 text-center">
 					<Link href="/" className="inline-flex">

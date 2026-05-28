@@ -10,6 +10,14 @@ export default function ForWho() {
 			aria-labelledby="for-who-heading"
 			className="relative isolate overflow-hidden px-6 py-20 sm:py-28 lg:px-8"
 		>
+			<Image
+				src="/graphics/ama-circle-green.png"
+				alt=""
+				aria-hidden="true"
+				width={260}
+				height={260}
+				className="pointer-events-none absolute -right-20 top-8 -z-10 w-44 select-none opacity-15 sm:w-56 lg:right-[8%] lg:top-10 lg:w-64"
+			/>
 			<Reveal className="mx-auto max-w-5xl rounded-3xl border border-ama-purple/10 bg-white/85 p-8 shadow-sm sm:p-10 lg:p-12">
 				<div className="grid items-center gap-8 md:grid-cols-[auto_1fr] md:gap-10">
 					<div className="mx-auto shrink-0 md:mx-0">

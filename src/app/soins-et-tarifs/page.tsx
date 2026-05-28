@@ -344,7 +344,7 @@ export default function SoinsEtTarifsPage() {
 					aria-hidden="true"
 					width={260}
 					height={260}
-					className="pointer-events-none absolute -left-24 bottom-10 -z-10 hidden w-56 select-none opacity-35 lg:block"
+					className="pointer-events-none absolute -left-16 bottom-8 -z-10 w-36 select-none opacity-18 sm:-left-20 sm:w-44 sm:opacity-25 lg:-left-24 lg:bottom-10 lg:w-56 lg:opacity-35"
 				/>
 
 				<Reveal className="mx-auto max-w-4xl text-center">
