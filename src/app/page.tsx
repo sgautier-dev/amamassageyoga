@@ -15,8 +15,8 @@ export default function HomePage() {
 			<Services />
 			<FeaturedService />
 			<ForWho />
-			<Location />
 			<Testimonials />
+			<Location />
 			<Contact />
 		</main>
 	)
