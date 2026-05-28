@@ -42,7 +42,7 @@ export default function FeaturedService() {
 							id="featured-heading"
 							className="mt-4 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl"
 						>
-							Champissage
+							Massage assis : Pause détente
 						</h2>
 
 						<p className="mt-4 text-base font-medium tracking-wide text-ama-green">
@@ -50,16 +50,20 @@ export default function FeaturedService() {
 						</p>
 
 						<p className="mt-6 text-lg leading-8 text-muted">
-							Un massage assis issu de la tradition ayurvédique, pensé pour
-							relâcher rapidement les tensions du dos, des épaules, de la nuque
-							et du crâne.
+							Pratiqué habillé et sans huile, il s’adapte facilement au cabinet,
+							à l’entreprise, aux événements ou à une pause dans la journée.
 						</p>
 
 						<div className="mt-8 max-w-xl text-base leading-8 text-muted lg:max-w-none">
 							<p>
-								Pratiqué habillé et sans huile, il s’adapte facilement au
-								cabinet, à l’entreprise, aux événements ou à une pause dans la
-								journée.
+								Aussi appelé champissage, ce massage assis issu de la tradition
+								ayurvédique est pensé pour soulager rapidement les tensions du
+								dos, des épaules, de la nuque et du crâne.
+							</p>
+
+							<p className="mt-6">
+								Adapté à tous, de l’enfance à la sagesse, sans
+								contre-indication.
 							</p>
 
 							<ul role="list" className="mt-8 space-y-4">
