@@ -13,7 +13,7 @@ import yinYogaImg from "@/images/soins/yin-yoga.jpg"
 export const metadata = {
 	title: "Soins & tarifs",
 	description:
-		"Découvrez les soins AMA Massage et Yoga à Parentis-en-Born : massages ayurvédiques, Champissage, soins ciblés, massage prénatal, yoga doux et tarifs.",
+		"Découvrez les soins et tarifs AMA Massage et Yoga à Parentis-en-Born : massage ayurvédique, champissage, massage prénatal, soins ciblés, drainage, yoga doux et yin yoga.",
 }
 
 type Price = {

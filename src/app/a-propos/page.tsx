@@ -7,7 +7,7 @@ import aboutMainImg from "@/images/marie-a-propos.jpg"
 export const metadata = {
 	title: "À propos",
 	description:
-		"Découvrez l’approche de Marie, praticienne en massages traditionnels, soins ayurvédiques et yoga doux à Parentis-en-Born.",
+		"Découvrez le parcours et l’approche de Marie, praticienne en massages ayurvédiques, soins traditionnels et yoga doux à Parentis-en-Born.",
 }
 
 const massageTrainings = [

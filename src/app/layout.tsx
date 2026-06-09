@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 		default: "AMA Massage et Yoga",
 	},
 	description:
-		"Massages traditionnels et yoga doux à Parentis-en-Born. Une approche sensible du toucher pour ralentir, respirer et se retrouver.",
+		"Massages ayurvédiques, soins ciblés, champissage, massage prénatal et yoga doux à Parentis-en-Born. Un espace pour ralentir, respirer et revenir à soi.",
 	authors: [
 		{
 			name: "Sébastien Gautier",
