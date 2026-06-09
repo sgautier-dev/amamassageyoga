@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { Dialog, DialogPanel } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/outline"
 
 const navigation = [
 	{ name: "Soins & tarifs", href: "/soins-et-tarifs" },
@@ -109,14 +109,22 @@ export default function Header() {
 					</Link>
 				</div>
 
-				<div className="flex lg:hidden">
+				<div className="flex items-center gap-8 lg:hidden">
+					<Link
+						href="tel:+33610755048"
+						aria-label="Appeler AMA Massage et Yoga"
+						className="inline-flex size-11 items-center justify-center rounded-full bg-ama-purple text-white shadow-sm transition hover:bg-ama-pink"
+					>
+						<PhoneIcon aria-hidden="true" className="size-6" />
+					</Link>
+
 					<button
 						type="button"
 						onClick={() => setMobileMenuOpen(true)}
 						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
 					>
 						<span className="sr-only">Open main menu</span>
-						<Bars3Icon aria-hidden="true" className="size-6" />
+						<Bars3Icon aria-hidden="true" className="size-8" />
 					</button>
 				</div>
 			</nav>
@@ -154,7 +162,7 @@ export default function Header() {
 							className="ml-auto -m-2.5 rounded-md p-2.5 text-foreground"
 						>
 							<span className="sr-only">Close menu</span>
-							<XMarkIcon aria-hidden="true" className="size-6" />
+							<XMarkIcon aria-hidden="true" className="size-8" />
 						</button>
 					</div>
 
@@ -178,7 +186,7 @@ export default function Header() {
 							))}
 						</div>
 
-						<div className="mt-8">
+						{/* <div className="mt-8">
 							<Link
 								href="/#contact"
 								onClick={(event) => {
@@ -189,7 +197,7 @@ export default function Header() {
 							>
 								Prendre rendez-vous
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</DialogPanel>
 			</Dialog>

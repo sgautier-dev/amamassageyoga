@@ -5,7 +5,7 @@ import PointerFloatImage from "@/components/pointer-float-image"
 const social = [
 	{
 		name: "Facebook",
-		href: "#", // TODO: replace with real Facebook URL
+		href: "https://www.facebook.com/profile.php?id=61590493477016", // TODO: replace with real Facebook URL
 		icon: (props: React.SVGProps<SVGSVGElement>) => (
 			<svg fill="currentColor" viewBox="0 0 24 24" {...props}>
 				<path
@@ -21,7 +21,7 @@ const social = [
 	},
 	{
 		name: "Instagram",
-		href: "#", // TODO: replace with real Instagram URL
+		href: "https://www.instagram.com/amamassageyoga/", // TODO: replace with real Instagram URL
 		icon: (props: React.SVGProps<SVGSVGElement>) => (
 			<svg fill="currentColor" viewBox="0 0 24 24" {...props}>
 				<path
