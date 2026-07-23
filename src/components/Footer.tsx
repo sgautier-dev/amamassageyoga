@@ -21,7 +21,7 @@ const social = [
 	},
 	{
 		name: "Instagram",
-		href: "https://www.instagram.com/amamassageyoga/", // TODO: replace with real Instagram URL
+		href: "https://www.instagram.com/ama.massageyoga/", // TODO: replace with real Instagram URL
 		icon: (props: React.SVGProps<SVGSVGElement>) => (
 			<svg fill="currentColor" viewBox="0 0 24 24" {...props}>
 				<path
@@ -103,7 +103,7 @@ export default function Footer() {
 								className="text-ama-purple transition-colors hover:text-ama-pink"
 							>
 								<span className="sr-only">{item.name}</span>
-								<item.icon aria-hidden="true" className="size-5" />
+								<item.icon aria-hidden="true" className="size-6" />
 							</a>
 						))}
 					</div>
