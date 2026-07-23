@@ -92,7 +92,7 @@ export default function Header() {
 							onClick={
 								item.href === "/#contact" ? handleContactClick : undefined
 							}
-							className="text-sm font-semibold text-foreground transition hover:text-ama-purple"
+							className="text-base font-semibold text-foreground transition hover:text-ama-purple"
 						>
 							{item.name}
 						</Link>
