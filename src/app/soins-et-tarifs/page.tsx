@@ -33,6 +33,7 @@ type Care = {
 	duration: string
 	location?: string
 	note?: string
+	weeklySessions?: { location: string; time: string }[]
 	accent: string
 	thumbnail?: StaticImageData
 	thumbnailAlt?: string
@@ -282,10 +283,21 @@ const careGroups: CareGroup[] = [
 				accent: "bg-ama-purple",
 				thumbnail: yinYogaImg,
 				thumbnailAlt: "Yin yoga et yoga doux",
+				weeklySessions: [
+					{
+						location: "À Gastes · avec Moovance",
+						time: "Mardi · 19h15 – 20h30",
+					},
+					{
+						location: "À Parentis-en-Born · chez Koré Studio",
+						time: "Vendredi · 14h – 15h",
+					},
+				],
+				note: "Inscriptions auprès de l’association Moovance et Koré Studio Pilates.",
 				prices: [
 					{
-						duration: "Séances individuelles ou collectives",
-						price: "Sur demande",
+						duration: "Séances individuelles et collectives",
+						price: "Créneaux hebdomadaires",
 					},
 				],
 				description: [
@@ -454,7 +466,7 @@ export default function SoinsEtTarifsPage() {
 																{care.prices.map((price) => (
 																	<span
 																		key={`${care.id}-${price.duration}`}
-																		className="inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm"
+																		className="inline-flex flex-wrap items-center gap-2 rounded-full bg-background px-4 py-2 text-sm"
 																	>
 																		<span className="text-muted">
 																			{price.duration}
@@ -479,6 +491,24 @@ export default function SoinsEtTarifsPage() {
 														{care.description.map((paragraph) => (
 															<p key={paragraph}>{paragraph}</p>
 														))}
+
+														{care.weeklySessions?.length ? (
+															<div className="space-y-4">
+																<h4 className="font-semibold text-foreground">
+																	Créneaux hebdomadaires
+																</h4>
+																<ul role="list" className="space-y-4">
+																	{care.weeklySessions.map((session) => (
+																		<li key={session.location}>
+																			<p className="font-semibold text-foreground">
+																				{session.location}
+																			</p>
+																			<p>{session.time}</p>
+																		</li>
+																		))}
+																</ul>
+															</div>
+														) : null}
 
 														{care.note ? (
 															<p className="font-medium text-foreground">

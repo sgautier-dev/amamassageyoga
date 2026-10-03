@@ -3,11 +3,18 @@ import Image from "next/image"
 import Reveal from "@/components/reveal"
 import locationImg from "@/images/location.jpg"
 
-const locations = [
-	"Cabinet partagé au COSY Coffee Shop",
-	"Entreprises",
-	"Événements",
-	"À domicile sur demande",
+const locations: { label: string; description?: string }[] = [
+	{
+		label: "Cabinets partagés",
+		description: "Parentis-en-Born · Biscarrosse · Sud Bassin",
+	},
+	{
+		label: "Centre bien-être",
+		description: "Mimizan · SIBLU La Plage",
+	},
+	{ label: "Entreprises" },
+	{ label: "Événements" },
+	{ label: "À domicile" },
 ]
 
 export default function Location() {
@@ -41,30 +48,33 @@ export default function Location() {
 							id="location-heading"
 							className="mt-4 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl"
 						>
-							Parentis-en-Born et alentours
+							Nord Landes · Sud Bassin d’Arcachon
 						</h2>
 
-						<p className="mt-6 text-lg leading-8 text-muted">
-							Un espace chaleureux pour ralentir, se déposer et s’offrir un
+						<p className="mt-6 text-lg leading-8 text-muted italic">
+							Plusieurs lieux pour ralentir, se déposer et s’offrir un
 							moment de présence à soi.
 						</p>
 
 						<div className="mt-8 max-w-xl text-base leading-8 text-muted lg:max-w-none">
 							<ul role="list" className="space-y-4">
 								{locations.map((item) => (
-									<li key={item} className="flex gap-x-3">
+									<li key={item.label} className="flex gap-x-3">
 										<span
 											aria-hidden="true"
 											className="mt-2 h-2 w-2 flex-none rounded-full bg-ama-pink"
 										/>
-										<span className="text-base leading-7 text-foreground">
-											{item}
-										</span>
+										<div className="text-base leading-7 text-foreground">
+											<strong className="font-semibold">{item.label}</strong>
+											{item.description ? (
+												<p className="text-muted">{item.description}</p>
+											) : null}
+										</div>
 									</li>
 								))}
 							</ul>
 
-							<p className="mt-8">
+							<p className="mt-8 italic">
 								Les séances se font sur rendez-vous, selon les disponibilités.
 							</p>
 						</div>
