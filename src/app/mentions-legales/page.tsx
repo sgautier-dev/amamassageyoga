@@ -23,16 +23,16 @@ export default function LegalNoticePage() {
 							id="legal-contact-heading"
 							className="text-2xl font-semibold text-foreground"
 						>
-							Coordonnées professionnelles
+							Édition et coordonnées professionnelles
 						</h2>
 						<dl className="mt-4 space-y-3">
 							<div>
-								<dt className="font-semibold text-foreground">Nom</dt>
-								<dd>Marie Poulain</dd>
+								<dt className="font-semibold text-foreground">Éditrice du site</dt>
+								<dd>Marie Poulain — entrepreneur individuel (EI)</dd>
 							</div>
 							<div>
 								<dt className="font-semibold text-foreground">Statut</dt>
-								<dd>Auto-entrepreneure</dd>
+								<dd>Régime micro-entrepreneur (auto-entrepreneure)</dd>
 							</div>
 							<div>
 								<dt className="font-semibold text-foreground">SIRET</dt>
@@ -66,6 +66,12 @@ export default function LegalNoticePage() {
 									</a>
 								</dd>
 							</div>
+							<div>
+								<dt className="font-semibold text-foreground">
+									Directrice de la publication
+								</dt>
+								<dd>Marie Poulain</dd>
+							</div>
 						</dl>
 						<p className="mt-4">
 							Cette adresse administrative n’est pas un lieu d’accueil pour les
@@ -79,7 +85,20 @@ export default function LegalNoticePage() {
 						>
 							Hébergement
 						</h2>
-						<p className="mt-3">Le site est hébergé sur la plateforme Vercel.</p>
+						<p className="mt-3">Le site est hébergé par Vercel Inc.</p>
+						<p className="mt-3">
+							Adresse de correspondance publiée dans ses conditions
+							d’utilisation : 440 N Barranca Avenue #4133, Covina, CA 91723,
+							États-Unis.
+						</p>
+						<p className="mt-3">
+							<a
+								href="https://vercel.com/legal/terms"
+								className="font-semibold text-ama-purple underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4"
+							>
+								Conditions d’utilisation de Vercel
+							</a>
+						</p>
 					</section>
 					<section aria-labelledby="legal-privacy-heading">
 						<h2
