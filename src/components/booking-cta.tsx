@@ -9,6 +9,7 @@ type BookingCtaProps = {
 	buttonLabel?: string
 	headingId?: string
 	className?: string
+	showMessageLink?: boolean
 }
 
 export default function BookingCta({
@@ -18,6 +19,7 @@ export default function BookingCta({
 	buttonLabel = "Appeler maintenant",
 	headingId,
 	className = "",
+	showMessageLink = false,
 }: BookingCtaProps) {
 	return (
 		<section
@@ -52,6 +54,13 @@ export default function BookingCta({
 					>
 						{buttonLabel}
 					</Link>
+					{showMessageLink ? (
+						<p className="mt-5">
+							<Link href="/contact" className="font-semibold underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+								Écrire un message
+							</Link>
+						</p>
+					) : null}
 					<p className="mt-5 text-sm leading-6 text-white/75">
 						🌍 Langues parlées : anglais · espagnol · portugais
 					</p>

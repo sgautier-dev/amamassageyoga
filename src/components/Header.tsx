@@ -10,7 +10,7 @@ import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/outline"
 const navigation = [
 	{ name: "Soins & tarifs", href: "/soins-et-tarifs" },
 	{ name: "À propos", href: "/a-propos" },
-	{ name: "Contact", href: "/#contact" },
+	{ name: "Contact", href: "/contact" },
 ]
 
 export default function Header() {
@@ -89,9 +89,6 @@ export default function Header() {
 						<Link
 							key={item.name}
 							href={item.href}
-							onClick={
-								item.href === "/#contact" ? handleContactClick : undefined
-							}
 							className="text-base font-semibold text-foreground transition hover:text-ama-purple"
 						>
 							{item.name}
@@ -172,12 +169,8 @@ export default function Header() {
 								<Link
 									key={item.name}
 									href={item.href}
-									onClick={(event) => {
+									onClick={() => {
 										setMobileMenuOpen(false)
-
-										if (item.href === "/#contact") {
-											handleContactClick(event)
-										}
 									}}
 									className="block rounded-2xl px-4 py-3 text-base font-semibold text-foreground transition hover:bg-ama-purple/5 hover:text-ama-purple"
 								>
