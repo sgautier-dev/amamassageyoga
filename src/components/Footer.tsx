@@ -108,6 +108,21 @@ export default function Footer() {
 						))}
 					</div>
 
+					<div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-ama-purple">
+						<Link
+							href="/mentions-legales"
+							className="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4"
+						>
+							Mentions légales
+						</Link>
+						<Link
+							href="/politique-de-confidentialite"
+							className="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4"
+						>
+							Politique de confidentialité
+						</Link>
+					</div>
+
 					<p className="text-xs leading-5 text-muted">
 						© {new Date().getFullYear()} AMA Massage et Yoga. Tous droits
 						réservés.

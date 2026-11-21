@@ -155,7 +155,7 @@ const careGroups: CareGroup[] = [
 					"sensation d’énergie et de légèreté",
 				],
 				duration: "15 à 45 min",
-				location: "Cabinet · entreprise · événements",
+				location: "Cabinet · entreprise · événements · domicile",
 				note: "Formats courts (15–20 min) réservés aux interventions en entreprise et événements.",
 			},
 			{
