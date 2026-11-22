@@ -51,7 +51,7 @@ export default function Location() {
 						</h2>
 
 						<p className="mt-6 text-lg leading-8 text-muted italic">
-							Je vous accueille au plus proche de vos besoins :
+							Au plus proche de vos besoins :
 						</p>
 
 						<div className="mt-8 max-w-xl text-base leading-8 text-muted lg:max-w-none">
