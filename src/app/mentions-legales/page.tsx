@@ -99,6 +99,16 @@ export default function LegalNoticePage() {
 								Conditions d’utilisation de Vercel
 							</a>
 						</p>
+						<p className="mt-3">
+							Pour contacter l’hébergeur :{" "}
+							<a
+								href="https://vercel.com/contact"
+								className="font-semibold text-ama-purple underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4"
+							>
+								page officielle de contact et d’assistance Vercel
+							</a>
+							.
+						</p>
 					</section>
 					<section aria-labelledby="legal-privacy-heading">
 						<h2
