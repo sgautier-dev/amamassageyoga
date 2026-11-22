@@ -6,14 +6,13 @@ import locationImg from "@/images/location.jpg"
 const locations: { label: string; description?: string }[] = [
 	{
 		label: "Cabinets partagés",
-		description: "Parentis-en-Born · Biscarrosse · Sud Bassin",
+		description: "Parentis-en-Born · Sud Bassin",
 	},
+	{ label: "En entreprises" },
 	{
-		label: "Centre bien-être",
-		description: "Mimizan · SIBLU La Plage",
+		label: "Lors d’événements",
+		description: "Marchés, anniversaires, EVJF, séminaires, journées thématiques…",
 	},
-	{ label: "Entreprises" },
-	{ label: "Événements" },
 	{ label: "À domicile" },
 ]
 
@@ -52,8 +51,7 @@ export default function Location() {
 						</h2>
 
 						<p className="mt-6 text-lg leading-8 text-muted italic">
-							Plusieurs lieux pour ralentir, se déposer et s’offrir un
-							moment de présence à soi.
+							Au plus proche de vos besoins :
 						</p>
 
 						<div className="mt-8 max-w-xl text-base leading-8 text-muted lg:max-w-none">
