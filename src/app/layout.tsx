@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		default: "AMA Massage et Yoga",
 	},
 	description:
-		"Massages ayurvédiques, soins ciblés, champissage, massage prénatal et yoga doux à Parentis-en-Born. Un espace pour ralentir, respirer et revenir à soi.",
+		"Massages ayurvédiques, champissage, massage prénatal et yoga doux dans les Landes et sur le Bassin d’Arcachon, notamment à Parentis-en-Born.",
 	authors: [
 		{
 			name: "Sébastien Gautier",

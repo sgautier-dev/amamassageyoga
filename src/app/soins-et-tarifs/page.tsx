@@ -14,7 +14,7 @@ import yinYogaImg from "@/images/soins/yin-yoga.jpg"
 export const metadata = {
 	title: "Soins & tarifs",
 	description:
-		"Découvrez les soins et tarifs AMA Massage et Yoga à Parentis-en-Born : massage ayurvédique, champissage, massage prénatal, soins ciblés, drainage, yoga doux et yin yoga.",
+		"Massages ayurvédiques, champissage et drainage dans les Landes et sur le Bassin d’Arcachon. Yoga doux et yin yoga à Gastes et à Parentis-en-Born.",
 }
 
 type Price = {
