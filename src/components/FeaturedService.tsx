@@ -62,8 +62,9 @@ export default function FeaturedService() {
 							</p>
 
 							<p className="mt-6">
-								Adapté à tous, de l’enfance à la sagesse, sans
-								contre-indication.
+								Ce massage peut être proposé de l’enfance à la sagesse, en
+								tenant compte des besoins de chacun et des éventuelles
+								contre-indications.
 							</p>
 
 							<ul role="list" className="mt-8 space-y-4">
