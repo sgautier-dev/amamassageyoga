@@ -32,7 +32,7 @@ export default function Hero() {
 				<div className="relative z-10 px-6 pt-14 pb-16 sm:pb-20 lg:col-span-7 lg:px-0 lg:pt-24 lg:pb-24 xl:col-span-6 hero-reveal">
 					<div className="mx-auto max-w-lg lg:mx-0">
 						<p className="text-sm font-medium uppercase tracking-[0.18em] text-ama-purple">
-							Massage & yoga à Parentis-en-Born
+							Massage & Yoga · Landes & Bassin d’Arcachon
 						</p>
 
 						<h1 className="mt-6 text-5xl font-semibold tracking-tight text-balance sm:text-6xl">

@@ -6,7 +6,7 @@ import locationImg from "@/images/location.jpg"
 const locations: { label: string; description?: string }[] = [
 	{
 		label: "Cabinets partagés",
-		description: "Parentis-en-Born · Sud Bassin",
+		description: "Parentis-en-Born · Biscarrosse · Mios · La Teste-de-Buch",
 	},
 	{ label: "En entreprises" },
 	{
@@ -71,10 +71,6 @@ export default function Location() {
 									</li>
 								))}
 							</ul>
-
-							<p className="mt-8 italic">
-								Les séances se font sur rendez-vous, selon les disponibilités.
-							</p>
 						</div>
 					</Reveal>
 				</div>

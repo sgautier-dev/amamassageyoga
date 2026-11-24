@@ -1,4 +1,5 @@
 import Image, { type StaticImageData } from "next/image"
+import Link from "next/link"
 
 import Reveal from "@/components/reveal"
 import BookingCta from "@/components/booking-cta"
@@ -143,7 +144,7 @@ const careGroups: CareGroup[] = [
 				description: [
 					"Issu de la tradition ayurvédique, le Champissage est un massage assis, précis et enveloppant, qui agit directement sur les zones où le stress s’accumule.",
 					"Pratiqué habillé et sans huile, il s’adapte facilement à différents environnements : cabinet, entreprise, événement ou pause dans la journée.",
-					"Accessible à tous — enfants, adolescents, adultes et seniors — il est proposé sans contre-indication.",
+					"Ce massage peut être proposé de l’enfance à la sagesse, en tenant compte des besoins de chacun et des éventuelles contre-indications.",
 				],
 				benefitTitle: "Favorise",
 				benefits: [
@@ -710,9 +711,12 @@ export default function SoinsEtTarifsPage() {
 							l’expérience.
 						</p>
 
-						<p className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-ama-purple shadow-sm ring-1 ring-ama-purple/10">
-							🎁 Bons cadeaux disponibles sur demande.
-						</p>
+						<Link
+							href="/contact?motif=bon-cadeau"
+							className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ama-purple px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ama-purple"
+						>
+							<span aria-hidden="true">🎁</span> Demander un bon cadeau
+						</Link>
 					</div>
 				</Reveal>
 			</section>
