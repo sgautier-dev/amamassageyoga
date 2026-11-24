@@ -47,7 +47,7 @@ export default function Location() {
 							id="location-heading"
 							className="mt-4 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl"
 						>
-							Nord Landes · Sud Bassin d’Arcachon
+							Landes & Bassin d’Arcachon
 						</h2>
 
 						<p className="mt-6 text-lg leading-8 text-muted italic">
