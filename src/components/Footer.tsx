@@ -90,7 +90,7 @@ export default function Footer() {
 					</Link>
 
 					<p className="text-sm leading-6 text-muted">
-						Parentis-en-Born et alentours
+						Landes & Bassin d’Arcachon
 					</p>
 
 					<div className="flex items-center gap-6">
